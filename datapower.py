@@ -6,8 +6,9 @@ from settings import MGM_URI, USER, PASSWORD, TOP_LEVEL_URL
 
 def main():
     """main"""
-    get_domains()
-    get_aliases()
+    # get_domains()
+    # get_aliases()
+    get_config()
 
 def get_domains():
     """read_config_from_file"""
