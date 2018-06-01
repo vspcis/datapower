@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy wsrr:policyClass="WSME1_7PolicyClass" wsrr:policyClassDomain="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" Name="urn:AAAGateway_Consumer_System_PDP_be26e120-9ca7-11e7-9dc3-c062b3c7b647_d53bc4c3-7663-4892-812e-16ed01e630ba" wsrr:__displayName="AAAGateway_Consumer_System_PDP" xmlns:wsme="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" xmlns:wsrr="http://www.ibm.com/xmlns/prod/serviceregistry/6/2/wspolicy" xmlns:wsp="http://www.w3.org/ns/ws-policy">
+	<wsme:Rule>
+		<wsme:Action IfCondition="true">
+			<wsme:ExecuteXSL>
+				<wsme:Parameter Name="AAA_Policy_Pattern" Value="CONSUMER_SYSTEM_PDP_AAA"/>
+				<wsme:Stylesheet>local:///Framework/ProcessingFlow/AAAGateway.xsl</wsme:Stylesheet>
+			</wsme:ExecuteXSL>
+		</wsme:Action>
+	</wsme:Rule>
+</wsp:Policy>

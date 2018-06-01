@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy wsrr:policyClassDomain="http://eHealthOntario/Flow/Polices/2014/10/common-flows" wsrr:policyClass="BusinessPolicyClass" wsrr:__displayName="SOAPFaultProcessing_Y_FHIR" Name="urn:SOAPFaultProcessing_Y_FHIR_e4275449-19eb-4efa-afa2-e4a5227cb177_7dd9fcf0-9a18-42db-ab32-d69f42b1350e" xmlns:wsp="http://www.w3.org/2006/07/ws-policy" xmlns:wsrr="http://www.ibm.com/xmlns/prod/serviceregistry/6/2/wspolicy" xmlns:wsme="http://eHealthOntario/Flow/Policies/2014/10/common-flows">
+    
+    <wsme:Rule>
+
+        <wsme:Condition>
+            <wsme:Expression>
+                <wsme:Attribute>Resource</wsme:Attribute>
+                <wsme:Operator>Equal</wsme:Operator>
+                <wsme:Value>Patient</wsme:Value>
+            </wsme:Expression>
+        </wsme:Condition>
+
+        <wsme:Action IfCondition="true">
+            <wsme:ExecuteXSL>
+                <wsme:Parameter Name="Enforce" Value="false"/>
+                <wsme:Parameter Name="TransientDataMap" Value="TD_ConfigFile_FMBLGatewayReq"/>
+                <wsme:Stylesheet>local:///Framework/ProcessingFlow/PCRFHIRFaultProcessing.xsl</wsme:Stylesheet>
+            </wsme:ExecuteXSL>
+        </wsme:Action>
+        <wsme:Action IfCondition="false">
+            <wsme:ExecuteXSL>
+                <wsme:Parameter Name="Enforce" Value="false"/>
+                <wsme:Parameter Name="TransientDataMap" Value="TD_ConfigFile_FMBLGatewayReq"/>
+                <wsme:Stylesheet>local:///Framework/ProcessingFlow/PassThrough.xsl</wsme:Stylesheet>
+            </wsme:ExecuteXSL>
+        </wsme:Action>
+    </wsme:Rule>
+</wsp:Policy>

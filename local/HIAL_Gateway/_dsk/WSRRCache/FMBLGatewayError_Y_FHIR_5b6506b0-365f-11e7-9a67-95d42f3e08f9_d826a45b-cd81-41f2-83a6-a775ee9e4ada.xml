@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy wsrr:policyClass="WSME1_7PolicyClass" wsrr:policyClassDomain="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" Name="urn:FMBLGatewayError_Y_FHIR_5b6506b0-365f-11e7-9a67-95d42f3e08f9_d826a45b-cd81-41f2-83a6-a775ee9e4ada" wsrr:__displayName="FMBLGatewayError_Y_FHIR" xmlns:wsme="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" xmlns:wsrr="http://www.ibm.com/xmlns/prod/serviceregistry/6/2/wspolicy" xmlns:wsp="http://www.w3.org/ns/ws-policy">
+	<wsme:Rule>
+		<wsme:Action IfCondition="true">
+			<wsme:ExecuteXSL>
+				<wsme:Parameter Name="TransientDataMap" Value="TD_ConfigFile_FMBLGatewayResponseAndError"/>
+				<wsme:Parameter Name="Enforce" Value="true"/>
+				<wsme:Stylesheet>local:///Framework/ProcessingFlow/FHIRFullMessageBodyLogging.xsl</wsme:Stylesheet>
+			</wsme:ExecuteXSL>
+		</wsme:Action>
+	</wsme:Rule>
+</wsp:Policy>

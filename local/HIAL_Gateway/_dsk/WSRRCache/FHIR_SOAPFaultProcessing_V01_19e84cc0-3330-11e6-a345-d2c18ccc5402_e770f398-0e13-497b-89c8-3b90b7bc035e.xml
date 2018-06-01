@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy wsrr:policyClass="WSME1_7PolicyClass" wsrr:policyClassDomain="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" Name="urn:FHIR_SOAPFaultProcessing_V01_19e84cc0-3330-11e6-a345-d2c18ccc5402_e770f398-0e13-497b-89c8-3b90b7bc035e" wsrr:__displayName="FHIR_SOAPFaultProcessing_Y" xmlns:wsme="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" xmlns:wsrr="http://www.ibm.com/xmlns/prod/serviceregistry/6/2/wspolicy" xmlns:wsp="http://www.w3.org/ns/ws-policy">
+	<wsme:Rule>
+		<wsme:Action IfCondition="true">
+			<wsme:ExecuteXSL>
+				<wsme:Parameter Name="Enforce" Value="true"/>
+				<wsme:Stylesheet>local:///Framework/ProcessingFlow/FHIRFaultProcessing.xsl</wsme:Stylesheet>
+			</wsme:ExecuteXSL>
+		</wsme:Action>
+	</wsme:Rule>
+</wsp:Policy>

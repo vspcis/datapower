@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLTemplate name="TD_ConfigFile_LogRespExit" version="1.0">
+<TransientData>
+   <parentTag name="Error">
+      <ComplexType name="Business_Error">
+         <FieldName>error_Activity</FieldName>
+         <FieldName>error_Category</FieldName>
+         <FieldName>error_Code</FieldName>
+         <FieldName>error_Description</FieldName>
+         <FieldName>error_Node_Name</FieldName>
+         <FieldName>error_NodeID</FieldName>
+         <FieldName>error_Reference</FieldName>
+         <FieldName>error_Severity</FieldName>
+         <FieldName>error_Timestamp</FieldName>
+         <FieldName>segment_Code</FieldName>
+      </ComplexType>
+      <ComplexType name="Error_Collection">
+         <FieldName>error_Count</FieldName>
+         <FieldName>error_Response_Code</FieldName>
+      </ComplexType>
+   </parentTag>
+   <ComplexType name="Transaction_Flow">
+      <FieldName>HIB_End_Time</FieldName>
+	  <FieldName>HIB_Start_Time</FieldName>
+      <FieldName>transaction_ID</FieldName>
+   </ComplexType>
+</TransientData>
+</XMLTemplate>

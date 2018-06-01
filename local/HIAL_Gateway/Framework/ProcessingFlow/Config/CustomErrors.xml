@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Error map updated sow9 for FMBL Error flow handling -->
+<!-- Error mapped updated for SOW 9 Authorization Failed is set now to Rejected as per defect 10641 -->
+<ErrorMap xmlns:eho="http://ehealthontario.on.ca/xmlns/eho">
+	<ErrorList service="HialR1B" errorCategory="HialErrors">
+	<!-- SEPT 23: MappedErrorMessage element value for every error was changed to reflect the Consumer Error Message as per Error handling PAD -->	
+		<Error>
+		    <ErrorCode>0x01d30003</ErrorCode>
+			<ErrorMessage>Schema Validation Error</ErrorMessage>
+		    <MappedErrorCode>0001</MappedErrorCode>
+		    <MappedErrorMessage>Message Schema does not match specification</MappedErrorMessage>
+		</Error>	
+		
+		<Error> 
+			<ErrorCode>0x01d30004</ErrorCode>
+			<ErrorMessage>Reject by SLM</ErrorMessage>
+		    <MappedErrorCode>0002</MappedErrorCode>
+		    <MappedErrorMessage>Exceeded allowance by Service Level Agreement</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+			<ErrorCode>0x00d30007</ErrorCode>
+			<ErrorMessage>Rejected by policy</ErrorMessage>
+		    <MappedErrorCode>0003</MappedErrorCode>
+		    <MappedErrorMessage>Access denied by Policy</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+		    <ErrorCode>0x01d30001</ErrorCode>
+			<ErrorMessage>AAA Authentication Failure</ErrorMessage>
+			<MappedErrorCode>0004</MappedErrorCode>
+			<MappedErrorMessage>Rejected</MappedErrorMessage>
+			</Error>
+			
+		<Error>
+		    <ErrorCode>0x01d30002</ErrorCode>
+			<ErrorMessage>AAA Authorization Failure</ErrorMessage>
+			<MappedErrorCode>0005</MappedErrorCode>
+			<MappedErrorMessage>Rejected</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+			<ErrorCode>0x01d30005</ErrorCode>
+			<ErrorMessage>Virus Found</ErrorMessage>
+			<MappedErrorCode>0006</MappedErrorCode>
+			<MappedErrorMessage>Virus Detected in Received Message</MappedErrorMessage>
+		</Error>
+		
+		 <Error>
+		    <ErrorCode>0x01130006</ErrorCode>
+			<ErrorMessage>Failed to establish a backside connection</ErrorMessage>
+			<MappedErrorCode>0007</MappedErrorCode>
+			<MappedErrorMessage>Unable to process transaction at this time</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+			<ErrorCode>0x01130007</ErrorCode>
+			<ErrorMessage>Failed to establish a backside connection</ErrorMessage>
+			<MappedErrorCode>0008</MappedErrorCode>
+			<MappedErrorMessage>Unable to process transaction at this time</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+		    <ErrorCode>0x00c3000f</ErrorCode>
+			<ErrorMessage>Invalid URL</ErrorMessage>
+			<MappedErrorCode>0009</MappedErrorCode>
+			<MappedErrorMessage>Invalid URL specified in HIAL Request</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+		    <ErrorCode>0x01330001</ErrorCode>
+			<ErrorMessage>internal error</ErrorMessage>
+			<MappedErrorCode>0010</MappedErrorCode>
+			<MappedErrorMessage>Unable to process transaction at this time</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+		    <ErrorCode>0x00030004</ErrorCode>
+			<ErrorMessage>DTD encountered in SOAP context</ErrorMessage>
+			<MappedErrorCode>0011</MappedErrorCode>
+			<MappedErrorMessage>Error in handling the transaction.  Unable to process.</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+		    <ErrorCode>0x0133000f</ErrorCode>
+			<ErrorMessage>MQGET is not allowed on this queue (Reason Code 2016)</ErrorMessage>
+			<MappedErrorCode>0012</MappedErrorCode>
+			<MappedErrorMessage>Unable to process transaction at this time</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+		    <ErrorCode>0x0133001f</ErrorCode>
+			<ErrorMessage>Could not open, destination queue or topic object is unknown (Reason Code 2085)</ErrorMessage>
+			<MappedErrorCode>0013</MappedErrorCode>
+			<MappedErrorMessage>Unable to process transaction at this time</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+		    <ErrorCode>0x0133001c</ErrorCode>
+			<ErrorMessage>Could not connect to the QM (Reason Code 2059)</ErrorMessage>
+			<MappedErrorCode>0014</MappedErrorCode>
+			<MappedErrorMessage>Unable to process transaction at this time</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+		    <ErrorCode>0x0133001b</ErrorCode>
+			<ErrorMessage>Could not connect to the named QM (Reason Code 2058)</ErrorMessage>
+			<MappedErrorCode>0015</MappedErrorCode>
+			<MappedErrorMessage>Unable to process transaction at this time</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+		    <ErrorCode>0x01330013</ErrorCode>
+			<ErrorMessage>The get call timed out before receiving any messages (Reason Code 2033)</ErrorMessage>
+			<MappedErrorCode>0016</MappedErrorCode>
+			<MappedErrorMessage>Unable to process transaction at this time</MappedErrorMessage>
+		</Error>
+		
+		<Error>
+			<ErrorCode>ehealth.customerror.0011</ErrorCode>
+			<ErrorMessage>Full Message Body Logging Error</ErrorMessage>
+			<MappedErrorCode>0017</MappedErrorCode>
+			<MappedErrorMessage>Internal Server Error</MappedErrorMessage>
+		</Error>
+		
+        </ErrorList>
+</ErrorMap>

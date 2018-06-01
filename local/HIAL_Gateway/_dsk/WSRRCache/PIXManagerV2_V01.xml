@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wsdl><Name>PIXManagerV2_V01.wsdl</Name><Operations><Operation><Name>PIXManager_PIXv2_QBP_Q21</Name><Policies><Policy>LOBRealizationMessageOutput_ClientService_GetPatientIdentifiersQuery_90ee2b1c-3129-459c-aebd-d3c48bfc18d0</Policy><Policy>ERMBSL_PCR_PIX_46f4d968-298a-43b7-a919-16eb982a495d</Policy><Policy>LOBRealizationMessageInput_ClientService_GetPatientIdentifiersQuery_af966fed-e500-4346-bd26-119e40bb1606</Policy></Policies></Operation><Operation><Name/><Policies/></Operation></Operations></Wsdl>

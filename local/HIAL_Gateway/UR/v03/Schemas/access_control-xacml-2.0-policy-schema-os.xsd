@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xacml="urn:oasis:names:tc:xacml:2.0:policy:schema:os" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:oasis:names:tc:xacml:2.0:policy:schema:os" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:simpleType name="EffectType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Permit"/>
+			<xs:enumeration value="Deny"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ExpressionType" abstract="true"/>
+	<xs:complexType name="AttributeValueType" mixed="true">
+		<xs:complexContent mixed="true">
+			<xs:extension base="xacml:ExpressionType">
+				<xs:sequence>
+					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:attribute name="DataType" type="xs:anyURI" use="required"/>
+				<xs:anyAttribute namespace="##any" processContents="lax"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- -->
+	<xs:element name="Obligations" type="xacml:ObligationsType"/>
+	<xs:complexType name="ObligationsType">
+		<xs:sequence>
+			<xs:element ref="xacml:Obligation" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- -->
+	<xs:element name="Obligation" type="xacml:ObligationType"/>
+	<xs:complexType name="ObligationType">
+		<xs:sequence>
+			<xs:element ref="xacml:AttributeAssignment" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="ObligationId" type="xs:anyURI" use="required"/>
+		<xs:attribute name="FulfillOn" type="xacml:EffectType" use="required"/>
+	</xs:complexType>
+	<!-- -->
+	<xs:element name="AttributeAssignment" type="xacml:AttributeAssignmentType"/>
+	<xs:complexType name="AttributeAssignmentType" mixed="true">
+		<xs:complexContent mixed="true">
+			<xs:extension base="xacml:AttributeValueType">
+				<xs:attribute name="AttributeId" type="xs:anyURI" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- -->
+</xs:schema>

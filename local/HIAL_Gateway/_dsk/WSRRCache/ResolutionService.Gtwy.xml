@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wsdl><Name>ResolutionService.Gtwy.wsdl</Name><Operations><Operation><Name>ResolvePatientID</Name><InputWSAction>http://ehealthontario.on.ca/xmlns/resolution/v01/PatientIDResolutionRequest</InputWSAction><OutputWSAction>http://ehealthontario.on.ca/xmlns/resolution/v01/PatientIDResolutionResponse</OutputWSAction><Policies/></Operation><Operation><Name>ResolvePatientID</Name><Policies/></Operation><Operation><Name/><Policies/></Operation></Operations></Wsdl>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ws_service_aaa_map>
+    <ws_service wsm_service="{http://ehealth.gov.on.ca/restful}ImmunizationRepositoryService">
+        <acceptcn>/DC=ssh/DC=subscribers/OU=Subscribers/OU=eHealthUsers/OU=Applications/CN=DTE.MLLPROXY1</acceptcn>
+        <acceptcn>/DC=ssh/DC=subscribers/OU=Subscribers/OU=eHealthUsers/OU=Applications/CN=CDMS1.DTE.EHEALTHONTARIO.INT</acceptcn>
+    </ws_service>
+    <ws_service wsm_service="{http://ehealth.gov.on.ca/restful/DHIR/ImmunizationRepository/V2}ImmunizationRepositoryService">
+        <acceptcn>/DC=ssh/DC=subscribers/OU=Subscribers/OU=eHealthUsers/OU=Applications/CN=DTE.MLLPROXY1</acceptcn>
+        <acceptcn>/DC=ssh/DC=subscribers/OU=Subscribers/OU=eHealthUsers/OU=Applications/CN=CDMS1.DTE.EHEALTHONTARIO.INT</acceptcn>
+    </ws_service>
+    <ws_service wsm_service="{http://ehealth.gov.on.ca/restful}HRMPublisherService">
+        <acceptcn>/DC=ssh/DC=subscribers/OU=Subscribers/OU=eHealthUsers/OU=Applications/CN=BLUEWATER1.NODE</acceptcn>
+    </ws_service>    
+</ws_service_aaa_map>

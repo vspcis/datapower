@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile profileDate="Jan-16-2013" profileVersion="3" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hl7="urn:hl7-org:v3">
+
+  <!-- ################################### DEV MOCKS  ###################################         -->
+  <!-- Service defined for testing in development - AAA_TEST_MOCK_SERVICE -->
+  <Service name ="AAA_TEST_MOCK_SERVICE" gatewayUri="/AAAPolicyTest">
+    <Operation name="{http://www.ehealthontario.com/wsdl/AAAPolicyTest.wsdl}AAAPolicyTest" operationAlias="urn_ihe_iti_2007_RegistryStoredQuery" webServiceAlias="UserRegistry/services/DocumentRegistry/DocumentRegistryService" />
+  </Service>
+
+  <Service name="AAA_TWO_PDP_MOCK_SERVICE" gatewayUri="/PDSupplierPIXv2Service/V01">
+    <Operation name="{http://www.ehealthontario.com/wsdl/AAAPolicyTest.wsdl}AAAPolicyTest" operationAlias="urn_ihe_iti_2007_RegistryStoredQuery" webServiceAlias="UserRegistry/services/ClientRegistry/PatientDemographicsSupplierV2XML" >
+      <AlternateAlias operationAlias="FindCandidatesQuery" webServiceAlias="UserRegistry/services/ClientRegistry/PatientDemographicsSupplierServiceHL7V2"/>
+    </Operation>
+
+  </Service>
+
+
+  <!-- Define settings for PIX v2 Service -->
+  <Service name="AAA_TWO_PDP_MOCK_SERVICE" gatewayUri="/PDSupplierPIXv2Service/V01">
+    <Operation name="{urn:hl7-org:v2xml}PIXManager_PIXv2_QBP_Q21" operationAlias="QPB_Q21" webServiceAlias="UserRegistry/services/ClientRegistry/PatientDemographicsSupplierV2XML" >
+      <AlternateAlias operationAlias="FindAssociatedClientIdentifiers" webServiceAlias="UserRegistry/services/ClientRegistry/PIXManagerServiceHL7V2"/>
+    </Operation>
+
+
+  </Service>
+
+  <Service name="AAA_TWO_PDP_MOCK_SERVICE" gatewayUri="/PDSupplierService/V01">
+    <Operation name="{urn:hl7-org:v2xml}PDSupplier_PDQv2_QBP_Q21" operationAlias="QPB_Q21" webServiceAlias="UserRegistry/services/ClientRegistry/PatientDemographicsSupplierV2XML" >
+      <AlternateAlias operationAlias="FindCandidatesQuery" webServiceAlias="UserRegistry/services/ClientRegistry/PatientDemographicsSupplierServiceHL7V2"/>
+    </Operation>
+  </Service>
+
+  <!-- Service defined for testing in development -->
+  <Service name="MockService_TLSMutual_PcCR_WSP" gatewayUri="/P/V3-MR200903/XML/PRPA_AR101102CA">
+    <Operation name="{urn:hl7-org:v3}PRPA_IN101101CA_I" operationAlias="GetClientDemographics" webServiceAlias="UserRegistry/services/ClientRegistry/PersonRegistryQueryService" oidXpath="/soap:Envelope/soap:Body/hl7:PRPA_IN101101CA/hl7:controlActEvent/hl7:queryByParameter/hl7:parameterList/hl7:clientIDPub/hl7:value/@root" />
+    <Operation name="{urn:hl7-org:v3}PRPA_IN101103CA_I" operationAlias="FindCandidatesQuery" webServiceAlias="UserRegistry/services/ClientRegistry/PersonRegistryQueryService" oidXpath="" />
+    <Operation name="{urn:hl7-org:v3}PRPA_IN101105CA_I" operationAlias="FindAssociatedClientIdentifiers" webServiceAlias="UserRegistry/services/ClientRegistry/PersonRegistryQueryService" oidXpath="/soap:Envelope/soap:Body/hl7:PRPA_IN101101CA/hl7:controlActEvent/hl7:queryByParameter/hl7:parameterList/hl7:clientIDPub/hl7:value/@root" />
+    <Operation name="{urn:hl7-org:v3}PRPA_IN101201CA_I" operationAlias="AddClient" webServiceAlias="UserRegistry/services/ClientRegistry/PersonFulfillerService" oidXpath="/soap:Envelope/soap:Body/hl7:PRPA_IN101201CA/hl7:controlActEvent/hl7:subject/hl7:registrationRequest/hl7:subject/hl7:identifiedEntity/hl7:id[1]/@root" />
+    <Operation name="{urn:hl7-org:v3}PRPA_IN101204CA_I" operationAlias="ReviseClient" webServiceAlias="UserRegistry/services/ClientRegistry/PersonFulfillerService" oidXpath="/soap:Envelope/soap:Body/hl7:PRPA_IN101201CA/hl7:controlActEvent/hl7:subject/hl7:registrationRequest/hl7:identifiedEntity/hl7:id@root" />
+  </Service>
+
+  <!-- MOck DI for testing in development -->
+  <Service name="MockService_TLSMutual_DICS_WSP" gatewayUri="/DocumentRepositoryService/V01">
+    <Operation name="{urn:ihe:iti:xds-b:2007}DocumentRepository_ProvideAndRegisterDocumentSet-b" operationAlias="urn_ihe_iti_2007_ProvideAndRegisterDocumentSet_b" webServiceAlias="UserRegistry/services/DocumentRepository/DocumentRepositoryService" />
+    <Operation name="{urn:ihe:iti:xds-b:2007}DocumentRepository_RetrieveDocumentSet" operationAlias="urn_ihe_iti_2007_RetrieveDocumentSet" webServiceAlias="UserRegistry/services/DocumentRepository/DocumentRepositoryService" />
+  </Service>
+
+  <Service name="MockService_TLSMutual_TWO_PDP_WSP" gatewayUri="/PDSupplierPIXv2Service/V01">
+    <Operation name="{urn:hl7-org:v2xml}PIXManager_PIXv2_QBP_Q21" operationAlias="QPB_Q21" webServiceAlias="UserRegistry/services/ClientRegistry/PatientDemographicsSupplierV2XML">
+      <AlternateAlias operationAlias="FindAssociatedClientIdentifiers" webServiceAlias="UserRegistry/services/ClientRegistry/PIXManagerServiceHL7V2" />
+    </Operation>
+  </Service>
+
+  <!-- Service defined for testing in development - AAA_TEST_MOCK_SERVICE -->
+  <Service name="MockService_TLSMutual_AAA_WSP" gatewayUri="/AAAPolicyTest">
+    <Operation name="{http://www.ehealthontario.com/wsdl/AAAPolicyTest.wsdl}AAAPolicyTest" operationAlias="urn_ihe_iti_2007_RegistryStoredQuery" webServiceAlias="UserRegistry/services/DocumentRegistry/DocumentRegistryService" />
+  </Service>
+
+  <Service name="MockService_TLSMutual_PCR_MOCK" gatewayUri="/initiatews/services/IdentityHubMock">
+    <Operation name="{urn:bean.initiate.com}searchMember" operationAlias="urn_ihe_iti_2007_ProvideAndRegisterDocumentSet_b" webServiceAlias="UserRegistry/services/DocumentRepository/DocumentRepositoryService" />
+    <Operation name="{urn:bean.initiate.com}putMember" operationAlias="urn_ihe_iti_2007_ProvideAndRegisterDocumentSet_b" webServiceAlias="UserRegistry/services/DocumentRepository/DocumentRepositoryService" />
+    <Operation name="{urn:bean.initiate.com}getMember" operationAlias="urn_ihe_iti_2007_ProvideAndRegisterDocumentSet_b" webServiceAlias="UserRegistry/services/DocumentRepository/DocumentRepositoryService" />
+    <Operation name="{urn:bean.initiate.com}putMember" operationAlias="urn_ihe_iti_2007_ProvideAndRegisterDocumentSet_b" webServiceAlias="UserRegistry/services/DocumentRepository/DocumentRepositoryService" />
+  </Service>
+
+  <!-- ###################################  END OF MOCKS ############################################################ -->
+
+  <!-- ###################################    Pass THRU  Rest Services    ################################### -->
+
+
+  <Service name="DHDR_WSP" gatewayUri="/DHDR/MedicationDispense/V1">
+    <Operation name="{http://ehealth.gov.on.ca/restful}GET" operationAlias="GET" webServiceAlias="UserRegistry/services/API/FHIR/Medications" />
+  </Service>
+
+  <Service name="DHDR_WSP" gatewayUri="/DHDR/Consent/V1">
+    <Operation name="{http://ehealth.gov.on.ca/restful}POST" operationAlias="POST" webServiceAlias="UserRegistry/services/API/FHIR/Privacy" />
+  </Service>
+
+  <!-- eConsult -->
+  <Service name="eConsult_WSP" gatewayUri="/eConsultService/V01">
+    <Operation name="{http://ehealth.gov.on.ca/restful}eConsultRestfulOperation" operationAlias="" webServiceAlias="UserRegistry/services/API/FHIR/OTN/eConsult" serviceURI="/eConsultService/V01"/>
+  </Service>
+
+
+  <!-- HRM -->
+  <Service name="HRMPublisher_WSP" gatewayUri="/HRMPublisherService/V01">
+    <Operation name="{http://ehealth.gov.on.ca/restful}HRMPublisherRestfulOperation" operationAlias="SubmitReport" webServiceAlias="UserRegistry/services/HRM/HRMService" serviceURI="/HRMPublisherService/V01"/>
+  </Service>
+
+  <!-- CPSO -->
+  <Service name="CPSO_WSP" gatewayUri="/OneIdIdentityPractitioner/V01">
+    <Operation name="{http://ehealth.gov.on.ca/restful}PostPractitionerIdentity" operationAlias="RESTOperation" webServiceAlias="UserRegistry/services/RESTService/IdentityPractitioner" serviceURI="/OneIdIdentityPractitioner/V01"/>
+  </Service>
+
+   <!-- DHIR CLINICIAN -->
+   <Service name="DHIR_CLINICIAN_WSP" gatewayUri="/DHIR/ClinicianRetrieve">
+    	<Operation name="{http://ehealth.gov.on.ca/restful}RetrieveImmunization" operationAlias="RetrieveImmunization" webServiceAlias="UserRegistry/services/DHIR/IconClinicianQuery" serviceURI="/DHIR/ClinicianRetrieve"/>
+    	<Operation name="{http://ehealth.gov.on.ca/restful}PatientLookup" operationAlias="RetrievePatient" webServiceAlias="UserRegistry/services/DHIR/IconClinicianQuery" serviceURI="/DHIR/ClinicianRetrieve"/>
+   </Service> 
+   <Service name="DHIR_CLINICIAN_WSP" gatewayUri="/DHIR/ClinicianProvide">
+    	<Operation name="{http://ehealth.gov.on.ca/restful}SubmitImmunization" operationAlias="SubmitImmunization" webServiceAlias="UserRegistry/services/DHIR/IconClinicianSubmission" serviceURI="/DHIR/ClinicianProvide"/>
+   </Service> 
+   
+   <!-- DHIR Partner -->
+   <Service name="DHIR_PARTNER_WSP" gatewayUri="/DHIR/Partner">
+    	<Operation name="{http://ehealth.gov.on.ca/restful}RetrieveImmunization" operationAlias="RetrieveImmunization" webServiceAlias="UserRegistry/services/DHIR/PartnerQuery" serviceURI="/DHIR/Partner"/>
+    	<Operation name="{http://ehealth.gov.on.ca/restful}PatientLookup" operationAlias="RetrievePatient" webServiceAlias="UserRegistry/services/DHIR/PartnerQuery" serviceURI="/DHIR/Partner"/>
+   </Service> 
+
+
+  <!--  ################################### SERVICES ###################################  -->
+
+  <!-- CDR Data In service to submit documents into the provincial clinical data repository -->
+  <Service name="CDRDataIn_WSP" gatewayUri="/ClinicalData/CDRDataIn_v1_0">
+    <Operation name="{http://ehealthontario.ca/wsdl/ClinicalData/CDRDataInService_v1}StoreClinicalDataRequest" operationAlias="StoreClinicalDataRequest" webServiceAlias="UserRegistry/services/hl7/policy" />
+  </Service>
+
+  <!-- CDR Data Out -->
+  <Service name="CDRDataOut_WSP" gatewayUri="/P/V3_20100910L/XML/CGTA_AR000001CG">
+    <Operation name="{urn:hl7-org:v3}REPC_IN000088ON_I" operationAlias="REPC_IN000088ON_I" webServiceAlias="UserRegistry/services/hl7/P/V3_20100910L/XML/CGTA_AR000001CG" />
+    <Operation name="{urn:hl7-org:v3}REPC_IN000100ON_I" operationAlias="REPC_IN000100ON_I" webServiceAlias="UserRegistry/services/hl7/P/V3_20100910L/XML/CGTA_AR000001CG" />
+    <Operation name="{urn:hl7-org:v3}CGTA_IN000300CG_I" operationAlias="CGTA_IN000300CG_I" webServiceAlias="UserRegistry/services/hl7/P/V3_20100910L/XML/CGTA_AR000001CG" />
+    <Operation name="{urn:hl7-org:v3}QUQI_IN000003CA_I" operationAlias="QUQI_IN000003CA_I" webServiceAlias="UserRegistry/services/hl7/P/V3_20100910L/XML/CGTA_AR000001CG" />
+  </Service>
+
+  <!--PCR_V3_WSP-->
+  <Service name="PCR_V3_WSP" gatewayUri="/P/V3-MR200903/XML/PRPA_AR101102CA">
+    <Operation name="{urn:hl7-org:v3}PRPA_IN101101CA_I" operationAlias="GetClientDemographics" webServiceAlias="UserRegistry/services/ClientRegistry/PersonRegistryQueryService" oidXpath="/soap:Envelope/soap:Body/hl7:PRPA_IN101101CA/hl7:controlActEvent/hl7:queryByParameter/hl7:parameterList/hl7:clientIDPub/hl7:value/@root"/>
+    <Operation name="{urn:hl7-org:v3}PRPA_IN101103CA_I" operationAlias="FindCandidatesQuery" webServiceAlias="UserRegistry/services/ClientRegistry/PersonRegistryQueryService" oidXpath=""/>
+    <Operation name="{urn:hl7-org:v3}PRPA_IN101105CA_I" operationAlias="FindAssociatedClientIdentifiers" webServiceAlias="UserRegistry/services/ClientRegistry/PersonRegistryQueryService" oidXpath="/soap:Envelope/soap:Body/hl7:PRPA_IN101101CA/hl7:controlActEvent/hl7:queryByParameter/hl7:parameterList/hl7:clientIDPub/hl7:value/@root"/>
+    <Operation name="{urn:hl7-org:v3}PRPA_IN101201CA_I" operationAlias="AddClient" webServiceAlias="UserRegistry/services/ClientRegistry/PersonFulfillerService" oidXpath="/soap:Envelope/soap:Body/hl7:PRPA_IN101201CA/hl7:controlActEvent/hl7:subject/hl7:registrationRequest/hl7:subject/hl7:identifiedEntity/hl7:id[1]/@root"/>
+    <Operation name="{urn:hl7-org:v3}PRPA_IN101204CA_I" operationAlias="ReviseClient" webServiceAlias="UserRegistry/services/ClientRegistry/PersonFulfillerService" oidXpath="/soap:Envelope/soap:Body/hl7:PRPA_IN101201CA/hl7:controlActEvent/hl7:subject/hl7:registrationRequest/hl7:identifiedEntity/hl7:id@root"/>
+  </Service>
+
+  <!-- Define settings for PIX v2 Service -->
+  <Service name="PCR_V2_WSP" gatewayUri="/PDSupplierPIXv2Service/V01">
+    <Operation name="{urn:hl7-org:v2xml}PIXManager_PIXv2_QBP_Q21" operationAlias="QPB_Q21" webServiceAlias="UserRegistry/services/ClientRegistry/PatientDemographicsSupplierV2XML" >
+      <AlternateAlias operationAlias="FindAssociatedClientIdentifiers" webServiceAlias="UserRegistry/services/ClientRegistry/PIXManagerServiceHL7V2"/>
+    </Operation>
+  </Service>
+
+  <!-- Define settings for PDQ v2 service -->
+  <Service name="PCR_V2_WSP" gatewayUri="/PDSupplierService/V01">
+    <Operation name="{urn:hl7-org:v2xml}PDSupplier_PDQv2_QBP_Q21" operationAlias="QPB_Q21" webServiceAlias="UserRegistry/services/ClientRegistry/PatientDemographicsSupplierV2XML" >
+      <AlternateAlias operationAlias="FindCandidatesQuery" webServiceAlias="UserRegistry/services/ClientRegistry/PatientDemographicsSupplierServiceHL7V2"/>
+    </Operation>
+  </Service>
+
+  <!-- Define settings for PR AAA Test v3/v4 service -->
+  <Service name="PPR_WSP" gatewayUri="/services/Provider/ProviderRegistryService/V04">
+    <Operation name="{http://ehealth.gov.on.ca/ProviderService}GetProviderPersonDetail" operationAlias="view" webServiceAlias="UserRegistry/services/Provider/ProviderRegistryService/V04" />
+    <Operation name="{http://ehealth.gov.on.ca/ProviderService}GetProviderOrganizationDetail" operationAlias="view" webServiceAlias="UserRegistry/services/Provider/ProviderRegistryService/V04" />
+    <Operation name="{http://ehealth.gov.on.ca/ProviderService}SearchForProviderPerson" operationAlias="view" webServiceAlias="UserRegistry/services/Provider/ProviderRegistryService/V04" />
+    <Operation name="{http://ehealth.gov.on.ca/ProviderService}SearchForProviderOrganization" operationAlias="view" webServiceAlias="UserRegistry/services/Provider/ProviderRegistryService/V04" />
+  </Service>
+
+
+
+  <!-- PCR FHIR service -->
+  <Service name="PatientServiceFHIR_MPG">
+    <Operation resource="Patient" transactionType="Read" operationAlias="read" webServiceAlias="UserRegistry/resources/PCR/1.0/FHIR/Patient" />
+    <Operation resource="Patient" transactionType="Search" operationAlias="search" webServiceAlias="UserRegistry/resources/PCR/1.0/FHIR/Patient" />
+    <Operation resource="Patient" transactionType="Match" operationAlias="match" webServiceAlias="UserRegistry/resources/PCR/1.0/FHIR/Patient" />
+  </Service>
+
+  <!-- PPR FHIR service -->
+  <Service name="ProviderServiceFHIR_MPG">
+    <Operation resource="Practitioner" transactionType="Read" operationAlias="read" webServiceAlias="UserRegistry/resources/PPR/1.0/FHIR/Practitioner" />
+    <Operation resource="Practitioner" transactionType="Match" operationAlias="match" webServiceAlias="UserRegistry/resources/PPR/1.0/FHIR/Practitioner" />
+    <Operation resource="Organization" transactionType="Read" operationAlias="read" webServiceAlias="UserRegistry/resources/PPR/1.0/FHIR/Organization" />
+    <Operation resource="Organization" transactionType="Match" operationAlias="match" webServiceAlias="UserRegistry/resources/PPR/1.0/FHIR/Organization" />
+  </Service>
+
+
+
+</Profile>

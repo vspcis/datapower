@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wsdl><Name>PatientDemographicsSupplierV2_V01.wsdl</Name><Operations><Operation><Name>PDSupplier_PDQv2_QBP_Q21</Name><Policies><Policy>ERMBSL_PCR_PDQ_46f4d968-298a-43b7-a919-16eb982a495d</Policy><Policy>LOBRealizationMessageInput_ClientService_PatientDemographicQuery_af966fed-e500-4346-bd26-119e40bb1606</Policy><Policy>LOBRealizationMessageOutput_ClientService_PatientDemographicQuery_90ee2b1c-3129-459c-aebd-d3c48bfc18d0</Policy></Policies></Operation><Operation><Name/><Policies/></Operation></Operations></Wsdl>

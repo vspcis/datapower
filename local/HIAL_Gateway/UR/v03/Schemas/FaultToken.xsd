@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:fault="http://fault.sts.ur.idm.ehealth.gov.on.ca/"        
+        targetNamespace="http://fault.sts.ur.idm.ehealth.gov.on.ca/"
+        xmlns="http://fault.sts.ur.idm.ehealth.gov.on.ca/"
+        elementFormDefault="qualified">
+
+    <xsd:complexType name="FaultCauseDetails">
+        <xsd:sequence>
+            <xsd:element name="detail" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="FaultCause">
+        <xsd:sequence>
+            <xsd:element name="reason" type="xsd:string"/>
+            <xsd:element name="details" type="fault:FaultCauseDetails" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="Fault">
+        <xsd:sequence>
+            <xsd:element name="code" type="xsd:string"/>
+            <xsd:element name="messageEn" type="xsd:string"/>
+            <xsd:element name="messageFr" type="xsd:string"/>
+            <xsd:element name="cause" type="fault:FaultCause" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="FaultToken">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="fault" type="fault:Fault"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

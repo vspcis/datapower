@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLTemplate name="TD_ConfigFile_FHIR_MPG_TransientDataMap_Logging" version="1.0">
+<TransientData>
+   <parentTag name="Error">
+      <ComplexType name="Business_Error">
+         <FieldName>error_Activity</FieldName>
+         <FieldName>error_Category</FieldName>
+         <FieldName>error_Code</FieldName>
+         <FieldName>error_Description</FieldName>
+         <FieldName>error_Node_Name</FieldName>
+         <FieldName>error_NodeID</FieldName>
+         <FieldName>error_Reference</FieldName>
+         <FieldName>error_Severity</FieldName>
+         <FieldName>error_Timestamp</FieldName>
+         <FieldName>segment_Code</FieldName>
+      </ComplexType>
+      <ComplexType name="Error_Collection">
+         <FieldName>error_Count</FieldName>
+         <FieldName>error_Response_Code</FieldName>
+      </ComplexType>
+   </parentTag>
+   <ComplexType name="Transaction_Flow">
+      <FieldName>delivery_Method</FieldName>
+      <FieldName>gateway_End_Time</FieldName>
+      <FieldName>gateway_Start_Time</FieldName>
+      <FieldName>global_ID</FieldName>
+      <FieldName>global_ID_Assigner</FieldName>
+      <FieldName>HIB_End_Time</FieldName>
+      <FieldName>HIB_Start_Time</FieldName>
+      <FieldName>is_Asynchronous</FieldName>
+      <FieldName>request_Message_Size</FieldName>
+      <FieldName>response_Message_Size</FieldName>
+      <FieldName>message_ID</FieldName>
+      <FieldName>operation</FieldName>
+      <FieldName>originating_System</FieldName>
+      <FieldName>response_Delivery_Endpoint</FieldName>
+      <FieldName>response_Message_ID</FieldName>
+      <FieldName>response_URL</FieldName>
+      <FieldName>consumer_Organization</FieldName>
+      <FieldName>consumer_System</FieldName>
+      <FieldName>consumer</FieldName>
+      <FieldName>sequence_ID</FieldName>
+      <FieldName>service_Name</FieldName>
+      <FieldName>service_Version</FieldName>
+      <FieldName>SLA</FieldName>
+      <FieldName>transaction_ID</FieldName>
+      <FieldName>consumer_Message_ID</FieldName>
+      <FieldName>eHealth_Transaction_ID</FieldName>
+      <FieldName>LOB_Repository_ID</FieldName>
+   </ComplexType>
+   <ComplexType name="HL7_Context">
+	  <FieldName>HL7_Interaction</FieldName>
+	  <FieldName>HL7_Response_Interaction</FieldName>
+	  <FieldName>schema_Validation_Description</FieldName>
+	  <FieldName>schema_Validation_Status</FieldName>
+	  <FieldName>HL7_Protocol</FieldName>
+	  <FieldName>HL7_Payload_Type</FieldName>
+   </ComplexType>
+   <ComplexType name="Policy_And_Rules">
+ <FieldName>policy_Name</FieldName>
+ <FieldName>policy_Type</FieldName>
+ <FieldName>rule_Response</FieldName>
+ </ComplexType>
+ 
+    <ComplexType name="Security_Context">
+ <FieldName>on_Behalf_Of</FieldName>
+ <FieldName>authentication_Level</FieldName>
+ <FieldName>authentication_Result</FieldName>
+ <FieldName>authentication_Result_Expiry</FieldName>
+ <FieldName>authorization_Result</FieldName>
+ <FieldName>authorization_Result_Expiry</FieldName>
+ <FieldName>SAML_Token_Issuer</FieldName>
+ <FieldName>authenticated_System</FieldName>
+ <FieldName>originating_System</FieldName>
+ <FieldName>under_Authority_Of</FieldName>
+ <FieldName>user_Subject</FieldName>
+ <FieldName>list_Of_Obligations</FieldName>
+ </ComplexType>
+ 
+ 
+   <ComplexType name="REST_Context">
+	  <FieldName>Verb</FieldName>
+      <FieldName>URI</FieldName>
+	  <FieldName>HTTP_Response_code</FieldName>
+   </ComplexType>
+</TransientData>
+</XMLTemplate>

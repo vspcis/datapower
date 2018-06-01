@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+    targetNamespace="urn:oasis:names:tc:SAML:2.0:protocol"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    elementFormDefault="unqualified"
+    attributeFormDefault="unqualified"
+    blockDefault="substitution"
+    version="2.0">
+    <import namespace="urn:oasis:names:tc:SAML:2.0:assertion" schemaLocation="saml-schema-assertion-2.0.xsd"/>
+    <import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
+    <element name="Response" type="samlp:ResponseType"/>
+    <complexType name="ResponseType">
+    	<complexContent>
+            <extension base="samlp:StatusResponseType">
+                <choice minOccurs="0" maxOccurs="unbounded">
+                    <element ref="saml:Assertion"/>
+                    <element ref="saml:EncryptedAssertion"/>
+                </choice>
+            </extension>
+    	</complexContent>
+    </complexType>
+    <complexType name="StatusResponseType">
+    	<sequence>
+            <element ref="saml:Issuer" minOccurs="0"/>
+            <element ref="ds:Signature" minOccurs="0"/>
+            <element ref="samlp:Extensions" minOccurs="0"/>
+            <element ref="samlp:Status"/>
+    	</sequence>
+    	<attribute name="ID" type="ID" use="required"/>
+    	<attribute name="InResponseTo" type="NCName" use="optional"/>
+    	<attribute name="Version" type="string" use="required"/>
+    	<attribute name="IssueInstant" type="dateTime" use="required"/>
+    	<attribute name="Destination" type="anyURI" use="optional"/>
+    	<attribute name="Consent" type="anyURI" use="optional"/>
+    </complexType>
+    <element name="Extensions" type="samlp:ExtensionsType"/>
+    <complexType name="ExtensionsType">
+        <sequence>
+            <any namespace="##other" processContents="lax" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <element name="Status" type="samlp:StatusType"/>
+    <complexType name="StatusType">
+        <sequence>
+            <element ref="samlp:StatusCode"/>
+            <element ref="samlp:StatusMessage" minOccurs="0"/>
+            <element ref="samlp:StatusDetail" minOccurs="0"/>
+        </sequence>
+    </complexType>
+    <element name="StatusCode" type="samlp:StatusCodeType"/>
+    <complexType name="StatusCodeType">
+        <sequence>
+            <element ref="samlp:StatusCode" minOccurs="0"/>
+        </sequence>
+        <attribute name="Value" type="anyURI" use="required"/>
+    </complexType>
+    <element name="StatusMessage" type="string"/>
+    <element name="StatusDetail" type="samlp:StatusDetailType"/>
+    <complexType name="StatusDetailType">
+        <sequence>
+            <any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <complexType name="RequestAbstractType" abstract="true">
+        <sequence>
+            <element ref="saml:Issuer" minOccurs="0"/>
+            <element ref="ds:Signature" minOccurs="0"/>
+            <element ref="samlp:Extensions" minOccurs="0"/>
+        </sequence>
+        <attribute name="ID" type="ID" use="required"/>
+        <attribute name="Version" type="string" use="required"/>
+        <attribute name="IssueInstant" type="dateTime" use="required"/>
+        <attribute name="Destination" type="anyURI" use="optional"/>
+    	<attribute name="Consent" type="anyURI" use="optional"/>
+    </complexType>
+
+</schema>

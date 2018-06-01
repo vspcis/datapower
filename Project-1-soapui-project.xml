@@ -1,0 +1,2366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5c09328f-923f-48c8-ae94-dea523962987" activeEnvironment="Default environment" name="Project 1" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" updated="2.3.0 2018-03-06T16:28:42Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="ffde3762-a356-4be8-a1a1-2ea39f73c537" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.69.0.10:8013" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.69.0.10:8013</con:endpoint><con:endpoint>http://10.69.0.10:8013</con:endpoint></con:endpoints><con:resource name="" path="" id="2127289b-6a3e-4954-9a29-22066095f2b3"><con:settings/><con:parameters/><con:method name="1" id="ada9fdab-ae4c-46fb-a69c-1906ca3cb98b" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/xml</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">soapenv:Envelope</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/xml</con:mediaType><con:params/><con:element>args</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:xht="http://www.w3.org/1999/xhtml">xht:html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="b7d85c8f-96fe-4e87-8aa2-dbf9e0dc1d86" mediaType="application/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.69.0.10:8013</con:endpoint><con:request><![CDATA[<args src='body'>
+<arg name='password'>aaa</arg>
+<arg name='certificate'>wsgateway.cert</arg>
+</args>]]></con:request><con:originalUri>http://10.69.0.10/</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="34f0ce8c-5ed9-400f-8662-660c06e66e73" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8013" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8013</con:endpoint></con:endpoints><con:resource name="" path="" id="bf5a4280-6c82-489f-9f30-49598b58bd03"><con:settings/><con:parameters/><con:method name="1" id="1e9cd0b7-d01e-480c-bac2-a1f94c587f32" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/><con:element>args</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:xht="http://www.w3.org/1999/xhtml">xht:html</con:element></con:representation><con:request name="Request 1" id="7aa249a1-df01-4edd-a7c7-1ad872587a7f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8013</con:endpoint><con:request><![CDATA[<args src='body'>
+<arg name='password'>admin</arg>
+<arg name='certificate'>wsgateway.cert</arg>
+</args>]]></con:request><con:originalUri>http://localhost/</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="e24a74f4-a14c-4a7b-b9de-3881f17b9eb5" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://localhost:5550" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://localhost:5550</con:endpoint></con:endpoints><con:resource name="" path="/mgmt/" id="7a079b09-7487-4636-9eba-4ab3b9d0a4b4"><con:settings/><con:parameters/><con:method name="1" id="b6ab64fe-90e3-49e7-925a-f5865c37d374" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/xml</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">soapenv:Envelope</con:element></con:representation><con:request name="Request 1" id="dec2dd43-0752-46cc-a966-6533f9beebb0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://localhost:5550</con:endpoint><con:request><![CDATA[<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+  <dp:request xmlns:dp="http://www.datapower.com/schemas/management ">
+  <dp:get-config/>
+  </dp:request>
+  </env:Body>
+</env:Envelope>]]></con:request><con:originalUri>https://localhost/</con:originalUri><con:credentials><con:username>admin</con:username><con:password>admin</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:WsdlInterface" id="e4eea812-12e2-44bf-a7ee-1ef0b3399472" wsaVersion="NONE" name="app-mgmt-protocol-soap" type="wsdl" bindingName="{http://www.datapower.com/schemas/appliance/management/3.0/wsdl}app-mgmt-protocol-soap" soapVersion="1_1" anonymous="optional" definition="C:/Users/victor.scaletchi/Downloads/app-mgmt-protocol-v3.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/C:/Users/victor.scaletchi/Downloads/app-mgmt-protocol-v3.wsdl"><con:part><con:url>file:/C:/Users/victor.scaletchi/Downloads/app-mgmt-protocol-v3.wsdl</con:url><con:content><![CDATA[<!--Copyright (c) 1999-2004 DataPower Technology, Inc.
+  All Rights Reserved.-->
+<!--Licensed Materials - Property of IBM
+  IBM WebSphere DataPower Appliances
+  Copyright IBM Corporation 2007,2013. All Rights Reserved.
+  US Government Users Restricted Rights - Use, duplication or disclosure
+  restricted by GSA ADP Schedule Contract with IBM Corp.-->
+<definitions name="app-mgmt-protocol" targetNamespace="http://www.datapower.com/schemas/appliance/management/3.0/wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdlsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsdltns="http://www.datapower.com/schemas/appliance/management/3.0/wsdl" xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/" xmlns:tns="http://www.datapower.com/schemas/appliance/management/3.0">
+  <types>
+    <xsd:schema targetNamespace="http://www.datapower.com/schemas/appliance/management/3.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:include schemaLocation="app-mgmt-protocol-v3.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="Fault">
+    <part name="body" element="tns:Fault"/>
+  </message>
+  <message name="PingRequest">
+    <part name="body" element="tns:PingRequest"/>
+  </message>
+  <message name="PingResponse">
+    <part name="body" element="tns:PingResponse"/>
+  </message>
+  <message name="GetTokenRequest">
+    <part name="body" element="tns:GetTokenRequest"/>
+  </message>
+  <message name="GetTokenResponse">
+    <part name="body" element="tns:GetTokenResponse"/>
+  </message>
+  <message name="RebootRequest">
+    <part name="body" element="tns:RebootRequest"/>
+  </message>
+  <message name="RebootResponse">
+    <part name="body" element="tns:RebootResponse"/>
+  </message>
+  <message name="SetFirmwareRequest">
+    <part name="body" element="tns:SetFirmwareRequest"/>
+  </message>
+  <message name="SetFirmwareResponse">
+    <part name="body" element="tns:SetFirmwareResponse"/>
+  </message>
+  <message name="ReinitializeRequest">
+    <part name="body" element="tns:ReinitializeRequest"/>
+  </message>
+  <message name="ReinitializeResponse">
+    <part name="body" element="tns:ReinitializeResponse"/>
+  </message>
+  <message name="SecureBackupRequest">
+    <part name="body" element="tns:SecureBackupRequest"/>
+  </message>
+  <message name="SecureBackupResponse">
+    <part name="body" element="tns:SecureBackupResponse"/>
+  </message>
+  <message name="SecureRestoreRequest">
+    <part name="body" element="tns:SecureRestoreRequest"/>
+  </message>
+  <message name="SecureRestoreResponse">
+    <part name="body" element="tns:SecureRestoreResponse"/>
+  </message>
+  <message name="WhenDeviceLastChangedRequest">
+    <part name="body" element="tns:WhenDeviceLastChangedRequest"/>
+  </message>
+  <message name="WhenDeviceLastChangedResponse">
+    <part name="body" element="tns:WhenDeviceLastChangedResponse"/>
+  </message>
+  <message name="QuiesceRequest">
+    <part name="body" element="tns:QuiesceRequest"/>
+  </message>
+  <message name="QuiesceResponse">
+    <part name="body" element="tns:QuiesceResponse"/>
+  </message>
+  <message name="UnquiesceRequest">
+    <part name="body" element="tns:UnquiesceRequest"/>
+  </message>
+  <message name="UnquiesceResponse">
+    <part name="body" element="tns:UnquiesceResponse"/>
+  </message>
+  <message name="GetDeviceInfoRequest">
+    <part name="body" element="tns:GetDeviceInfoRequest"/>
+  </message>
+  <message name="GetDeviceInfoResponse">
+    <part name="body" element="tns:GetDeviceInfoResponse"/>
+  </message>
+  <message name="GetDeviceSettingsRequest">
+    <part name="body" element="tns:GetDeviceSettingsRequest"/>
+  </message>
+  <message name="GetDeviceSettingsResponse">
+    <part name="body" element="tns:GetDeviceSettingsResponse"/>
+  </message>
+  <message name="SetDeviceSettingsRequest">
+    <part name="body" element="tns:SetDeviceSettingsRequest"/>
+  </message>
+  <message name="SetDeviceSettingsResponse">
+    <part name="body" element="tns:SetDeviceSettingsResponse"/>
+  </message>
+  <message name="GetErrorReportRequest">
+    <part name="body" element="tns:GetErrorReportRequest"/>
+  </message>
+  <message name="GetErrorReportResponse">
+    <part name="body" element="tns:GetErrorReportResponse"/>
+  </message>
+  <message name="SubscribeRequest">
+    <part name="body" element="tns:SubscribeRequest"/>
+  </message>
+  <message name="SubscribeResponse">
+    <part name="body" element="tns:SubscribeResponse"/>
+  </message>
+  <message name="UnsubscribeRequest">
+    <part name="body" element="tns:UnsubscribeRequest"/>
+  </message>
+  <message name="UnsubscribeResponse">
+    <part name="body" element="tns:UnsubscribeResponse"/>
+  </message>
+  <message name="GetDomainListRequest">
+    <part name="body" element="tns:GetDomainListRequest"/>
+  </message>
+  <message name="GetDomainListResponse">
+    <part name="body" element="tns:GetDomainListResponse"/>
+  </message>
+  <message name="GetDomainStatusRequest">
+    <part name="body" element="tns:GetDomainStatusRequest"/>
+  </message>
+  <message name="GetDomainStatusResponse">
+    <part name="body" element="tns:GetDomainStatusResponse"/>
+  </message>
+  <message name="GetDomainExportRequest">
+    <part name="body" element="tns:GetDomainExportRequest"/>
+  </message>
+  <message name="GetDomainExportResponse">
+    <part name="body" element="tns:GetDomainExportResponse"/>
+  </message>
+  <message name="SetDomainExportRequest">
+    <part name="body" element="tns:SetDomainExportRequest"/>
+  </message>
+  <message name="SetDomainExportResponse">
+    <part name="body" element="tns:SetDomainExportResponse"/>
+  </message>
+  <message name="GetDomainConfigRequest">
+    <part name="body" element="tns:GetDomainConfigRequest"/>
+  </message>
+  <message name="GetDomainConfigResponse">
+    <part name="body" element="tns:GetDomainConfigResponse"/>
+  </message>
+  <message name="SetDomainConfigRequest">
+    <part name="body" element="tns:SetDomainConfigRequest"/>
+  </message>
+  <message name="SetDomainConfigResponse">
+    <part name="body" element="tns:SetDomainConfigResponse"/>
+  </message>
+  <message name="DeleteDomainRequest">
+    <part name="body" element="tns:DeleteDomainRequest"/>
+  </message>
+  <message name="DeleteDomainResponse">
+    <part name="body" element="tns:DeleteDomainResponse"/>
+  </message>
+  <message name="StartDomainRequest">
+    <part name="body" element="tns:StartDomainRequest"/>
+  </message>
+  <message name="StartDomainResponse">
+    <part name="body" element="tns:StartDomainResponse"/>
+  </message>
+  <message name="StopDomainRequest">
+    <part name="body" element="tns:StopDomainRequest"/>
+  </message>
+  <message name="StopDomainResponse">
+    <part name="body" element="tns:StopDomainResponse"/>
+  </message>
+  <message name="RestartDomainRequest">
+    <part name="body" element="tns:RestartDomainRequest"/>
+  </message>
+  <message name="RestartDomainResponse">
+    <part name="body" element="tns:RestartDomainResponse"/>
+  </message>
+  <message name="GetCryptoArtifactsRequest">
+    <part name="body" element="tns:GetCryptoArtifactsRequest"/>
+  </message>
+  <message name="GetCryptoArtifactsResponse">
+    <part name="body" element="tns:GetCryptoArtifactsResponse"/>
+  </message>
+  <message name="SetFileRequest">
+    <part name="body" element="tns:SetFileRequest"/>
+  </message>
+  <message name="SetFileResponse">
+    <part name="body" element="tns:SetFileResponse"/>
+  </message>
+  <message name="CompareConfigRequest">
+    <part name="body" element="tns:CompareConfigRequest"/>
+  </message>
+  <message name="CompareConfigResponse">
+    <part name="body" element="tns:CompareConfigResponse"/>
+  </message>
+  <message name="GetLogRequest">
+    <part name="body" element="tns:GetLogRequest"/>
+  </message>
+  <message name="GetLogResponse">
+    <part name="body" element="tns:GetLogResponse"/>
+  </message>
+  <message name="WAXHNActivateRequest">
+    <part name="body" element="tns:WAXHNActivateRequest"/>
+  </message>
+  <message name="WAXHNActivateResponse">
+    <part name="body" element="tns:WAXHNActivateResponse"/>
+  </message>
+  <message name="GetServiceListFromExportRequest">
+    <part name="body" element="tns:GetServiceListFromExportRequest"/>
+  </message>
+  <message name="GetServiceListFromExportResponse">
+    <part name="body" element="tns:GetServiceListFromExportResponse"/>
+  </message>
+  <message name="GetInterDependentServicesRequest">
+    <part name="body" element="tns:GetInterDependentServicesRequest"/>
+  </message>
+  <message name="GetInterDependentServicesResponse">
+    <part name="body" element="tns:GetInterDependentServicesResponse"/>
+  </message>
+  <message name="GetServiceListFromDomainRequest">
+    <part name="body" element="tns:GetServiceListFromDomainRequest"/>
+  </message>
+  <message name="GetServiceListFromDomainResponse">
+    <part name="body" element="tns:GetServiceListFromDomainResponse"/>
+  </message>
+  <message name="StartServiceRequest">
+    <part name="body" element="tns:StartServiceRequest"/>
+  </message>
+  <message name="StartServiceResponse">
+    <part name="body" element="tns:StartServiceResponse"/>
+  </message>
+  <message name="StopServiceRequest">
+    <part name="body" element="tns:StopServiceRequest"/>
+  </message>
+  <message name="StopServiceResponse">
+    <part name="body" element="tns:StopServiceResponse"/>
+  </message>
+  <message name="GetReferencedObjectsRequest">
+    <part name="body" element="tns:GetReferencedObjectsRequest"/>
+  </message>
+  <message name="GetReferencedObjectsResponse">
+    <part name="body" element="tns:GetReferencedObjectsResponse"/>
+  </message>
+  <message name="DeleteServiceRequest">
+    <part name="body" element="tns:DeleteServiceRequest"/>
+  </message>
+  <message name="DeleteServiceResponse">
+    <part name="body" element="tns:DeleteServiceResponse"/>
+  </message>
+  <message name="DeleteFileRequest">
+    <part name="body" element="tns:DeleteFileRequest"/>
+  </message>
+  <message name="DeleteFileResponse">
+    <part name="body" element="tns:DeleteFileResponse"/>
+  </message>
+  <portType name="app-mgmt-protocol">
+    <operation name="Ping">
+      <input message="wsdltns:PingRequest"/>
+      <output message="wsdltns:PingResponse"/>
+      <fault name="PingFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetToken">
+      <input message="wsdltns:GetTokenRequest"/>
+      <output message="wsdltns:GetTokenResponse"/>
+      <fault name="GetTokenFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="Reboot">
+      <input message="wsdltns:RebootRequest"/>
+      <output message="wsdltns:RebootResponse"/>
+      <fault name="RebootFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="SetFirmware">
+      <input message="wsdltns:SetFirmwareRequest"/>
+      <output message="wsdltns:SetFirmwareResponse"/>
+      <fault name="SetFirmwareFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="Reinitialize">
+      <input message="wsdltns:ReinitializeRequest"/>
+      <output message="wsdltns:ReinitializeResponse"/>
+      <fault name="ReinitializeFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="SecureBackup">
+      <input message="wsdltns:SecureBackupRequest"/>
+      <output message="wsdltns:SecureBackupResponse"/>
+      <fault name="SecureBackupFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="SecureRestore">
+      <input message="wsdltns:SecureRestoreRequest"/>
+      <output message="wsdltns:SecureRestoreResponse"/>
+      <fault name="SecureRestoreFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="WhenDeviceLastChanged">
+      <input message="wsdltns:WhenDeviceLastChangedRequest"/>
+      <output message="wsdltns:WhenDeviceLastChangedResponse"/>
+      <fault name="WhenDeviceLastChangedFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="Quiesce">
+      <input message="wsdltns:QuiesceRequest"/>
+      <output message="wsdltns:QuiesceResponse"/>
+      <fault name="QuiesceFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="Unquiesce">
+      <input message="wsdltns:UnquiesceRequest"/>
+      <output message="wsdltns:UnquiesceResponse"/>
+      <fault name="UnquiesceFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetDeviceInfo">
+      <input message="wsdltns:GetDeviceInfoRequest"/>
+      <output message="wsdltns:GetDeviceInfoResponse"/>
+      <fault name="GetDeviceInfoFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetDeviceSettings">
+      <input message="wsdltns:GetDeviceSettingsRequest"/>
+      <output message="wsdltns:GetDeviceSettingsResponse"/>
+      <fault name="GetDeviceSettingsFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="SetDeviceSettings">
+      <input message="wsdltns:SetDeviceSettingsRequest"/>
+      <output message="wsdltns:SetDeviceSettingsResponse"/>
+      <fault name="SetDeviceSettingsFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetErrorReport">
+      <input message="wsdltns:GetErrorReportRequest"/>
+      <output message="wsdltns:GetErrorReportResponse"/>
+      <fault name="GetErrorReportFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="Subscribe">
+      <input message="wsdltns:SubscribeRequest"/>
+      <output message="wsdltns:SubscribeResponse"/>
+      <fault name="SubscribeFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="Unsubscribe">
+      <input message="wsdltns:UnsubscribeRequest"/>
+      <output message="wsdltns:UnsubscribeResponse"/>
+      <fault name="UnsubscribeFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetDomainList">
+      <input message="wsdltns:GetDomainListRequest"/>
+      <output message="wsdltns:GetDomainListResponse"/>
+      <fault name="GetDomainListFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetDomainStatus">
+      <input message="wsdltns:GetDomainStatusRequest"/>
+      <output message="wsdltns:GetDomainStatusResponse"/>
+      <fault name="GetDomainStatusFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetDomainExport">
+      <input message="wsdltns:GetDomainExportRequest"/>
+      <output message="wsdltns:GetDomainExportResponse"/>
+      <fault name="GetDomainExportFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="SetDomainExport">
+      <input message="wsdltns:SetDomainExportRequest"/>
+      <output message="wsdltns:SetDomainExportResponse"/>
+      <fault name="SetDomainExportFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetDomainConfig">
+      <input message="wsdltns:GetDomainConfigRequest"/>
+      <output message="wsdltns:GetDomainConfigResponse"/>
+      <fault name="GetDomainConfigFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="SetDomainConfig">
+      <input message="wsdltns:SetDomainConfigRequest"/>
+      <output message="wsdltns:SetDomainConfigResponse"/>
+      <fault name="SetDomainConfigFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="DeleteDomain">
+      <input message="wsdltns:DeleteDomainRequest"/>
+      <output message="wsdltns:DeleteDomainResponse"/>
+      <fault name="DeleteDomainFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="StartDomain">
+      <input message="wsdltns:StartDomainRequest"/>
+      <output message="wsdltns:StartDomainResponse"/>
+      <fault name="StartDomainFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="StopDomain">
+      <input message="wsdltns:StopDomainRequest"/>
+      <output message="wsdltns:StopDomainResponse"/>
+      <fault name="StopDomainFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="RestartDomain">
+      <input message="wsdltns:RestartDomainRequest"/>
+      <output message="wsdltns:RestartDomainResponse"/>
+      <fault name="RestartDomainFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetCryptoArtifacts">
+      <input message="wsdltns:GetCryptoArtifactsRequest"/>
+      <output message="wsdltns:GetCryptoArtifactsResponse"/>
+      <fault name="GetCryptoArtifactsFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="SetFile">
+      <input message="wsdltns:SetFileRequest"/>
+      <output message="wsdltns:SetFileResponse"/>
+      <fault name="SetFileFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="CompareConfig">
+      <input message="wsdltns:CompareConfigRequest"/>
+      <output message="wsdltns:CompareConfigResponse"/>
+      <fault name="CompareConfigFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetLog">
+      <input message="wsdltns:GetLogRequest"/>
+      <output message="wsdltns:GetLogResponse"/>
+      <fault name="GetLogFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="WAXHNActivate">
+      <input message="wsdltns:WAXHNActivateRequest"/>
+      <output message="wsdltns:WAXHNActivateResponse"/>
+      <fault name="WAXHNActivateFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetServiceListFromExport">
+      <input message="wsdltns:GetServiceListFromExportRequest"/>
+      <output message="wsdltns:GetServiceListFromExportResponse"/>
+      <fault name="GetServiceListFromExportFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetInterDependentServices">
+      <input message="wsdltns:GetInterDependentServicesRequest"/>
+      <output message="wsdltns:GetInterDependentServicesResponse"/>
+      <fault name="GetInterDependentServicesFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetServiceListFromDomain">
+      <input message="wsdltns:GetServiceListFromDomainRequest"/>
+      <output message="wsdltns:GetServiceListFromDomainResponse"/>
+      <fault name="GetServiceListFromDomainFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="StartService">
+      <input message="wsdltns:StartServiceRequest"/>
+      <output message="wsdltns:StartServiceResponse"/>
+      <fault name="StartServiceFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="StopService">
+      <input message="wsdltns:StopServiceRequest"/>
+      <output message="wsdltns:StopServiceResponse"/>
+      <fault name="StopServiceFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="GetReferencedObjects">
+      <input message="wsdltns:GetReferencedObjectsRequest"/>
+      <output message="wsdltns:GetReferencedObjectsResponse"/>
+      <fault name="GetReferencedObjectsFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="DeleteService">
+      <input message="wsdltns:DeleteServiceRequest"/>
+      <output message="wsdltns:DeleteServiceResponse"/>
+      <fault name="DeleteServiceFault" message="wsdltns:Fault"/>
+    </operation>
+    <operation name="DeleteFile">
+      <input message="wsdltns:DeleteFileRequest"/>
+      <output message="wsdltns:DeleteFileResponse"/>
+      <fault name="DeleteFileFault" message="wsdltns:Fault"/>
+    </operation>
+  </portType>
+  <binding name="app-mgmt-protocol-soap" type="wsdltns:app-mgmt-protocol">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="Ping">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="PingFault">
+        <wsdlsoap:fault name="PingFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetToken">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetTokenFault">
+        <wsdlsoap:fault name="GetTokenFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="Reboot">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="RebootFault">
+        <wsdlsoap:fault name="RebootFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="SetFirmware">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="SetFirmwareFault">
+        <wsdlsoap:fault name="SetFirmwareFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="Reinitialize">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="ReinitializeFault">
+        <wsdlsoap:fault name="ReinitializeFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="SecureBackup">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="SecureBackupFault">
+        <wsdlsoap:fault name="SecureBackupFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="SecureRestore">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="SecureRestoreFault">
+        <wsdlsoap:fault name="SecureRestoreFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="WhenDeviceLastChanged">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="WhenDeviceLastChangedFault">
+        <wsdlsoap:fault name="WhenDeviceLastChangedFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="Quiesce">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="QuiesceFault">
+        <wsdlsoap:fault name="QuiesceFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="Unquiesce">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="UnquiesceFault">
+        <wsdlsoap:fault name="UnquiesceFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetDeviceInfo">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetDeviceInfoFault">
+        <wsdlsoap:fault name="GetDeviceInfoFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetDeviceSettings">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetDeviceSettingsFault">
+        <wsdlsoap:fault name="GetDeviceSettingsFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="SetDeviceSettings">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="SetDeviceSettingsFault">
+        <wsdlsoap:fault name="SetDeviceSettingsFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetErrorReport">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetErrorReportFault">
+        <wsdlsoap:fault name="GetErrorReportFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="Subscribe">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="SubscribeFault">
+        <wsdlsoap:fault name="SubscribeFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="Unsubscribe">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="UnsubscribeFault">
+        <wsdlsoap:fault name="UnsubscribeFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetDomainList">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetDomainListFault">
+        <wsdlsoap:fault name="GetDomainListFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetDomainStatus">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetDomainStatusFault">
+        <wsdlsoap:fault name="GetDomainStatusFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetDomainExport">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetDomainExportFault">
+        <wsdlsoap:fault name="GetDomainExportFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="SetDomainExport">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="SetDomainExportFault">
+        <wsdlsoap:fault name="SetDomainExportFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetDomainConfig">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetDomainConfigFault">
+        <wsdlsoap:fault name="GetDomainConfigFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="SetDomainConfig">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="SetDomainConfigFault">
+        <wsdlsoap:fault name="SetDomainConfigFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="DeleteDomain">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="DeleteDomainFault">
+        <wsdlsoap:fault name="DeleteDomainFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="StartDomain">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="StartDomainFault">
+        <wsdlsoap:fault name="StartDomainFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="StopDomain">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="StopDomainFault">
+        <wsdlsoap:fault name="StopDomainFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="RestartDomain">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="RestartDomainFault">
+        <wsdlsoap:fault name="RestartDomainFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetCryptoArtifacts">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetCryptoArtifactsFault">
+        <wsdlsoap:fault name="GetCryptoArtifactsFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="SetFile">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="SetFileFault">
+        <wsdlsoap:fault name="SetFileFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="CompareConfig">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="CompareConfigFault">
+        <wsdlsoap:fault name="CompareConfigFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetLog">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetLogFault">
+        <wsdlsoap:fault name="GetLogFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="WAXHNActivate">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="WAXHNActivateFault">
+        <wsdlsoap:fault name="WAXHNActivateFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetServiceListFromExport">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetServiceListFromExportFault">
+        <wsdlsoap:fault name="GetServiceListFromExportFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetInterDependentServices">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetInterDependentServicesFault">
+        <wsdlsoap:fault name="GetInterDependentServicesFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetServiceListFromDomain">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetServiceListFromDomainFault">
+        <wsdlsoap:fault name="GetServiceListFromDomainFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="StartService">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="StartServiceFault">
+        <wsdlsoap:fault name="StartServiceFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="StopService">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="StopServiceFault">
+        <wsdlsoap:fault name="StopServiceFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="GetReferencedObjects">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="GetReferencedObjectsFault">
+        <wsdlsoap:fault name="GetReferencedObjectsFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="DeleteService">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="DeleteServiceFault">
+        <wsdlsoap:fault name="DeleteServiceFault" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="DeleteFile">
+      <wsdlsoap:operation soapAction="" style="document"/>
+      <input>
+        <wsdlsoap:body use="literal"/>
+      </input>
+      <output>
+        <wsdlsoap:body use="literal"/>
+      </output>
+      <fault name="DeleteFileFault">
+        <wsdlsoap:fault name="DeleteFileFault" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="app-mgmt-protocol">
+    <port name="app-mgmt-protocol" binding="wsdltns:app-mgmt-protocol-soap">
+      <documentation>
+        <wsi:Claim conformsTo="http://ws-i.org/profiles/basic/1.0"/>
+      </documentation>
+      <wsdlsoap:address location="https://*host:port*/service/mgmt/amp/3.0"/>
+    </port>
+  </service>
+  <!--SOAP 1.2 bindings are generated by xmlmgmt-produce-wsdl.xsl-->
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Users\victor.scaletchi\Downloads\app-mgmt-protocol-v3.xsd</con:url><con:content><![CDATA[<!--Copyright (c) 2005 DataPower Technology, Inc.
+  All Rights Reserved.-->
+<!--Licensed Materials - Property of IBM
+  IBM WebSphere DataPower Appliances
+  Copyright IBM Corporation 2007,2014,2010. All Rights Reserved.
+  US Government Users Restricted Rights - Use, duplication or disclosure
+  restricted by GSA ADP Schedule Contract with IBM Corp.-->
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://www.datapower.com/schemas/appliance/management/3.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.datapower.com/schemas/appliance/management/3.0">
+  <!--TYPE DEFINITIONS-->
+  <xsd:simpleType name="fault">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Authentication failure"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="subscription-id">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="subscription-state">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="active"/>
+      <xsd:enumeration value="none"/>
+      <xsd:enumeration value="duplicate"/>
+      <xsd:enumeration value="fault"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="subscription-state-url">
+    <xsd:simpleContent>
+      <xsd:extension base="tns:subscription-state">
+        <!--to return the subscription url in case of duplicate-->
+        <xsd:attribute name="URL" type="xsd:string" use="optional"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:simpleType name="subscription-topic">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="*"/>
+      <xsd:enumeration value="firmware"/>
+      <xsd:enumeration value="operational"/>
+      <xsd:enumeration value="configuration"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="device-id">
+    <!--i.e. 9002-XA35-00-->
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="device-type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="XA35"/>
+      <xsd:enumeration value="XS40"/>
+      <xsd:enumeration value="XG45"/>
+      <xsd:enumeration value="XI50"/>
+      <xsd:enumeration value="XI52"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="device-feature">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="MQ"/>
+      <xsd:enumeration value="TAM"/>
+      <xsd:enumeration value="HSM"/>
+      <xsd:enumeration value="DataGlue"/>
+      <xsd:enumeration value="JAXP-API"/>
+      <xsd:enumeration value="PKCS7-SMIME"/>
+      <xsd:enumeration value="SQL-ODBC"/>
+      <xsd:enumeration value="Tibco-EMS"/>
+      <xsd:enumeration value="Tibco-RV"/>
+      <xsd:enumeration value="WebSphere-JMS"/>
+      <xsd:enumeration value="XG4"/>
+      <xsd:enumeration value="LocateLED"/>
+      <xsd:enumeration value="AppOpt"/>
+      <xsd:enumeration value="IPMI"/>
+      <xsd:enumeration value="DCO"/>
+      <xsd:enumeration value="IPMI-LAN"/>
+      <xsd:enumeration value="zBX"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="device-operation">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Ping"/>
+      <xsd:enumeration value="GetToken"/>
+      <xsd:enumeration value="Reboot"/>
+      <xsd:enumeration value="SetFirmware"/>
+      <xsd:enumeration value="Reinitialize"/>
+      <xsd:enumeration value="SecureBackup"/>
+      <xsd:enumeration value="SecureRestore"/>
+      <xsd:enumeration value="WhenDeviceLastChanged"/>
+      <xsd:enumeration value="Quiesce"/>
+      <xsd:enumeration value="Unquiesce"/>
+      <xsd:enumeration value="GetDeviceInfo"/>
+      <xsd:enumeration value="GetDeviceSettings"/>
+      <xsd:enumeration value="SetDeviceSettings"/>
+      <xsd:enumeration value="GetErrorReport"/>
+      <xsd:enumeration value="Subscribe"/>
+      <xsd:enumeration value="Unsubscribe"/>
+      <xsd:enumeration value="GetDomainList"/>
+      <xsd:enumeration value="GetDomainStatus"/>
+      <xsd:enumeration value="GetDomainExport"/>
+      <xsd:enumeration value="SetDomainExport"/>
+      <xsd:enumeration value="GetDomainConfig"/>
+      <xsd:enumeration value="SetDomainConfig"/>
+      <xsd:enumeration value="DeleteDomain"/>
+      <xsd:enumeration value="StartDomain"/>
+      <xsd:enumeration value="StopDomain"/>
+      <xsd:enumeration value="RestartDomain"/>
+      <xsd:enumeration value="GetCryptoArtifacts"/>
+      <xsd:enumeration value="SetFile"/>
+      <xsd:enumeration value="CompareConfig"/>
+      <xsd:enumeration value="GetLog"/>
+      <xsd:enumeration value="WAXHNActivate"/>
+      <xsd:enumeration value="GetServiceListFromExport"/>
+      <xsd:enumeration value="GetInterDependentServices"/>
+      <xsd:enumeration value="GetServiceListFromDomain"/>
+      <xsd:enumeration value="StartService"/>
+      <xsd:enumeration value="StopService"/>
+      <xsd:enumeration value="GetReferencedObjects"/>
+      <xsd:enumeration value="DeleteService"/>
+      <xsd:enumeration value="DeleteFile"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="management-type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="web-mgmt"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="management-interface">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute name="type" type="tns:management-type" use="required"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:simpleType name="reboot-mode">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="reboot"/>
+      <xsd:enumeration value="reload"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="status">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="ok"/>
+      <xsd:enumeration value="error"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="domain-name">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="admin-state">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="enabled"/>
+      <xsd:enumeration value="disabled"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="op-state">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="up"/>
+      <xsd:enumeration value="down"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="config-state">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="saved"/>
+      <xsd:enumeration value="modified"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="quiesce-state">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value=""/>
+      <xsd:enumeration value="quiescing"/>
+      <xsd:enumeration value="quiesced"/>
+      <xsd:enumeration value="unquiescing"/>
+      <xsd:enumeration value="error"/>
+      <xsd:enumeration value="unknown quiesce state"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="debug-state">
+    <xsd:restriction base="xsd:boolean"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="cur-cmd">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="crypto-location">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="cert:"/>
+      <xsd:enumeration value="sharedcert:"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="secure-backup-state">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="enabled"/>
+      <xsd:enumeration value="disabled"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="crypto-file-name">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute name="location" type="tns:crypto-location" use="required"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="firmware">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:base64Binary"/>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="export">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:base64Binary"/>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="backup">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:base64Binary">
+        <xsd:attribute name="domain" type="xsd:string" use="required"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="backup-file">
+    <xsd:sequence>
+      <xsd:element name="File" type="tns:file-location"/>
+    </xsd:sequence>
+    <xsd:attribute name="domain" type="xsd:string" use="required"/>
+  </xsd:complexType>
+  <xsd:complexType name="SecureBackup">
+    <xsd:sequence>
+      <xsd:element name="SecureBackupFile" minOccurs="1" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:extension>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="resource-uri">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="policy-type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="add"/>
+      <xsd:enumeration value="delete"/>
+      <xsd:enumeration value="change"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="deployment-policy">
+    <xsd:sequence>
+      <xsd:element name="AcceptedConfig" type="tns:resource-uri" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="FilteredConfig" type="tns:resource-uri" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="ModifiedConfig" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Match" type="tns:resource-uri" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="Type" type="tns:policy-type" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="Property" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="Value" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="deployment-policy-configuration">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:base64Binary">
+        <!--policy-domain-name is the name of the domain in the backup that contains the policy-object-->
+        <xsd:attribute name="policy-domain-name" type="xsd:string" use="optional"/>
+        <!--policy-object-name is the name of the policy-object-->
+        <xsd:attribute name="policy-object-name" type="xsd:string" use="required"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="file">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:base64Binary">
+        <xsd:attribute name="domain" type="xsd:string" use="required"/>
+        <xsd:attribute name="location" type="xsd:string" use="required"/>
+        <xsd:attribute name="name" type="xsd:string" use="required"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="file-location">
+    <xsd:attribute name="domain" type="xsd:string" use="required"/>
+    <xsd:attribute name="location" type="xsd:string" use="required"/>
+    <xsd:attribute name="name" type="xsd:string" use="required"/>
+  </xsd:complexType>
+  <xsd:simpleType name="compare-result">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="identical"/>
+      <xsd:enumeration value="different"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="token-type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="login/web-mgmt"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="token">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:complexType name="config-object">
+    <xsd:attribute name="name" type="xsd:string"/>
+    <xsd:attribute name="class-name" type="xsd:string"/>
+    <xsd:attribute name="class-display-name" type="xsd:string" use="optional"/>
+  </xsd:complexType>
+  <xsd:complexType name="detailed-config-object">
+    <xsd:complexContent>
+      <xsd:extension base="tns:config-object">
+        <xsd:sequence>
+          <xsd:element name="ReferencedObject" type="tns:config-object" minOccurs="0" maxOccurs="unbounded"/>
+          <xsd:element name="UserComments" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="ErrorMessage" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="AdminState" type="tns:admin-state" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="OpState" type="tns:op-state" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="ConfigState" type="tns:config-state" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="QuiesceState" type="tns:quiesce-state" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+        <xsd:attribute name="referencedExternally" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="deleted" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="excluded" type="xsd:boolean" use="optional"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="config-objects">
+    <xsd:sequence>
+      <xsd:element name="Object" minOccurs="0" maxOccurs="unbounded" type="tns:config-object"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="detailed-config-objects">
+    <xsd:sequence>
+      <xsd:element name="Object" minOccurs="0" maxOccurs="unbounded" type="tns:detailed-config-object"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!--OPERATION DEFINITIONS-->
+  <xsd:element name="Fault" type="tns:fault"/>
+  <xsd:element name="PingRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="SubscriptionID" type="tns:subscription-id"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="PingResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="SubscriptionState" type="tns:subscription-state"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="RebootRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Mode" type="tns:reboot-mode"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="RebootResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SetFirmwareRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="AcceptLicense" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="Firmware" type="tns:firmware"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SetFirmwareResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="ReinitializeRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Firmware" type="tns:firmware"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="ReinitializeResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SecureBackupRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="DoNotIncludeiSCSI" minOccurs="0" maxOccurs="1"/>
+        <!--omitted=include iSCSI-->
+        <xsd:element name="DoNotIncludeRAID" minOccurs="0" maxOccurs="1"/>
+        <!--omitted=include RAID-->
+        <xsd:choice>
+          <xsd:element name="CryptoCertificateName" type="xsd:string"/>
+          <xsd:element name="CryptoCertificate" type="xsd:base64Binary"/>
+        </xsd:choice>
+        <xsd:element name="SecureBackupDestination" type="tns:resource-uri" minOccurs="0" maxOccurs="1"/>
+        <!--if omitted, backup returned in response-->
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SecureBackupResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+        <xsd:element name="SecureBackup" type="tns:SecureBackup" minOccurs="0" maxOccurs="1"/>
+        <!--occurs if SecureBackupDestination not in SecureBackupRequest-->
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SecureRestoreRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Validate" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="CryptoCredentialName" type="xsd:string"/>
+        <xsd:choice>
+          <xsd:element name="SecureBackupSource" type="tns:resource-uri"/>
+          <xsd:element name="SecureBackup" type="tns:SecureBackup"/>
+        </xsd:choice>
+        <xsd:element name="BackupMachineType" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SecureRestoreResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <!--Request the last time that something that would be contained in a
+     SecureBackup changed on the device.  The response can be compared to
+     the date of the SecureBackup to determine if the SecureBackup is still
+     valid.  WhenDeviceLastChangedRequest IS NOT CURRENTLY SUPPORTED AND WILL
+     RESULT IN AN ERROR-->
+  <xsd:element name="WhenDeviceLastChangedRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="DoNotIncludeiSCSI" minOccurs="0" maxOccurs="1"/>
+        <!--omitted=include iSCSI in the evaluation of what has changed-->
+        <xsd:element name="DoNotIncludeRAID" minOccurs="0" maxOccurs="1"/>
+        <!--omitted=include RAID in the evaluation of what has changed-->
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="WhenDeviceLastChangedResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+        <xsd:element name="DeviceLastChanged" type="xsd:dateTime"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="QuiesceRequest">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Device" minOccurs="0" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Timeout" type="xsd:unsignedShort"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Domain" minOccurs="0" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Name" type="tns:domain-name" minOccurs="1" maxOccurs="1"/>
+              <xsd:element name="Timeout" type="xsd:unsignedShort"/>
+              <xsd:element name="Services" type="tns:config-objects" minOccurs="0" maxOccurs="1"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="QuiesceResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="UnquiesceRequest">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Device" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="Domain" minOccurs="0" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Name" type="tns:domain-name" minOccurs="1" maxOccurs="1"/>
+              <xsd:element name="Services" type="tns:config-objects" minOccurs="0" maxOccurs="1"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="UnquiesceResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDeviceInfoRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:sequence/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDeviceInfoResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:sequence>
+          <xsd:element name="DeviceName" type="xsd:string"/>
+          <xsd:element name="DeviceSerialNo" type="xsd:string"/>
+          <xsd:element name="DeviceID" type="tns:device-id"/>
+          <xsd:element name="DeviceType" type="tns:device-type"/>
+          <xsd:element name="FirmwareVersion" type="xsd:string"/>
+          <xsd:element name="FailureDetected" type="xsd:boolean"/>
+          <xsd:element name="CurrentAMPVersion" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="ManagementInterface" type="tns:management-interface" minOccurs="0" maxOccurs="unbounded"/>
+          <xsd:element name="SecureBackup" type="tns:secure-backup-state" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="DeviceFeature" type="tns:device-feature" minOccurs="0" maxOccurs="unbounded"/>
+          <xsd:element name="DeviceOperation" type="tns:device-operation" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDeviceSettingsRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:sequence/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDeviceSettingsResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+        <xsd:element name="Settings" type="tns:export"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SetDeviceSettingsRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Settings" type="tns:export"/>
+        <xsd:element name="Policy" type="tns:deployment-policy" minOccurs="0" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SetDeviceSettingsResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetErrorReportRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:sequence/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetErrorReportResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+        <xsd:element name="ErrorReport" type="tns:file"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SubscribeRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Subscription">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="URL" type="xsd:string"/>
+              <xsd:element name="Topics">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Topic" type="tns:subscription-topic" minOccurs="1" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="id" type="tns:subscription-id" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SubscribeResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="SubscriptionState" type="tns:subscription-state-url"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="UnsubscribeRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Subscription">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Topics">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Topic" type="tns:subscription-topic" minOccurs="1" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="id" type="tns:subscription-id" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="UnsubscribeResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="SubscriptionState" type="tns:subscription-state"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDomainListRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:sequence/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDomainListResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Domain" type="tns:domain-name" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDomainStatusRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDomainStatusResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+        <xsd:element name="Domain">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="AdminState" type="tns:admin-state"/>
+              <xsd:element name="OpState" type="tns:op-state"/>
+              <xsd:element name="ConfigState" type="tns:config-state"/>
+              <xsd:element name="DebugState" type="tns:debug-state"/>
+              <xsd:element name="CurrentCommand" type="tns:cur-cmd"/>
+              <xsd:element name="QuiesceState" type="tns:quiesce-state"/>
+            </xsd:sequence>
+            <xsd:attribute name="name" type="tns:domain-name" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDomainExportRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDomainExportResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+        <xsd:element name="Config" type="tns:backup"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SetDomainExportRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Reset-Domain" type="xsd:boolean" minOccurs="0" maxOccurs="1"/>
+        <xsd:choice>
+          <xsd:element name="Config" type="tns:backup"/>
+          <xsd:element name="ConfigFile" type="tns:backup-file"/>
+        </xsd:choice>
+        <xsd:choice>
+          <!--inlined policy rules-->
+          <xsd:element name="Policy" type="tns:deployment-policy" minOccurs="0" maxOccurs="1"/>
+          <!--referenced name of a deployment policy in the Config backup-->
+          <xsd:element name="Policy-Object-Name" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+          <!--configuration export containing a deployment policy-->
+          <xsd:element name="Policy-Configuration" type="tns:deployment-policy-configuration" minOccurs="0" maxOccurs="1"/>
+        </xsd:choice>
+        <xsd:element name="Services" type="tns:config-objects" minOccurs="0" maxOccurs="1"/>
+        <!--Optionally import all files in configuration export when importing by services
+             By default, only files referenced directly or indirectly by services will get imported-->
+        <xsd:element name="ImportAllFiles" type="xsd:boolean" default="false" minOccurs="0" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SetDomainExportResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDomainConfigRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDomainConfigResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+        <xsd:element name="Config" type="tns:backup"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SetDomainConfigRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Config" type="tns:backup"/>
+        <xsd:element name="Policy" type="tns:deployment-policy" minOccurs="0" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SetDomainConfigResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="DeleteDomainRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="DeleteDomainResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="StartDomainRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="StartDomainResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="StopDomainRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="StopDomainResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="RestartDomainRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="RestartDomainResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetCryptoArtifactsRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetCryptoArtifactsResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+        <xsd:element name="CryptoArtifacts">
+          <xsd:complexType>
+            <xsd:choice>
+              <xsd:element name="CryptoFileName" type="tns:crypto-file-name" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:choice>
+            <xsd:attribute name="domain" type="tns:domain-name" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SetFileRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="File" type="tns:file"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SetFileResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CompareConfigRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="CompareConfig">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="From">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:choice>
+                      <xsd:element name="Running"/>
+                      <xsd:choice>
+                        <!--Filter out the Generated and External objects from the Running Configuration
+                       before comparing the configurations-->
+                        <xsd:element name="Persistable"/>
+                      </xsd:choice>
+                      <xsd:element name="Persisted"/>
+                      <xsd:element name="Settings" type="tns:export"/>
+                      <xsd:element name="Config" type="tns:backup"/>
+                    </xsd:choice>
+                    <xsd:element name="Policy" type="tns:deployment-policy" minOccurs="0" maxOccurs="1"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="To">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:choice>
+                      <xsd:element name="Running"/>
+                      <xsd:choice>
+                        <!--Filter out the Generated and External objects from the Running Configuration
+                       before comparing the configurations-->
+                        <xsd:element name="Persistable"/>
+                      </xsd:choice>
+                      <xsd:element name="Persisted"/>
+                      <xsd:element name="Settings" type="tns:export"/>
+                      <xsd:element name="Config" type="tns:backup"/>
+                    </xsd:choice>
+                    <xsd:element name="Policy" type="tns:deployment-policy" minOccurs="0" maxOccurs="1"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="domain" type="tns:domain-name" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CompareConfigResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="CompareConfig">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="CompareResult" type="tns:compare-result"/>
+            </xsd:sequence>
+            <xsd:attribute name="domain" type="tns:domain-name" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetLogRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:sequence/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetLogResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:any processContents="skip" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetTokenRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Type" type="tns:token-type"/>
+        <xsd:element name="User" type="xsd:string"/>
+        <xsd:element name="Password" type="xsd:string"/>
+        <xsd:element name="Domain" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetTokenResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+        <xsd:element name="Token" type="tns:token"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="WAXHNActivateRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="MaxCacheSize" type="xsd:unsignedInt"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="WAXHNActivateResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetServiceListFromExportRequest">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Config" type="tns:backup"/>
+        <xsd:element name="ConfigFile" type="tns:backup-file"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetServiceListFromExportResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="xsd:string"/>
+        <xsd:element name="Services" type="tns:detailed-config-objects"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetInterDependentServicesRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:choice>
+          <xsd:element name="Config" type="tns:backup"/>
+          <xsd:element name="ConfigFile" type="tns:backup-file"/>
+        </xsd:choice>
+        <xsd:element name="Services" type="tns:config-objects"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetInterDependentServicesResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="xsd:string"/>
+        <xsd:sequence>
+          <xsd:element name="Services" type="tns:detailed-config-objects"/>
+          <xsd:element name="ObjectsToBeOverwritten" type="tns:detailed-config-objects"/>
+          <xsd:element name="FilesToBeOverwritten" minOccurs="0" maxOccurs="1">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="File" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetServiceListFromDomainRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetServiceListFromDomainResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="xsd:string"/>
+        <xsd:element name="Services" type="tns:detailed-config-objects"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="StartServiceRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+        <xsd:element name="Services" type="tns:config-objects"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="StartServiceResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="StopServiceRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+        <xsd:element name="Services" type="tns:config-objects"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="StopServiceResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetReferencedObjectsRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+        <xsd:element name="ObjectClass" type="xsd:string"/>
+        <xsd:element name="ObjectName" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetReferencedObjectsResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+        <xsd:sequence>
+          <xsd:element name="Objects" type="tns:detailed-config-objects"/>
+          <xsd:element name="Files" minOccurs="0" maxOccurs="1">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="File" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="DeleteServiceRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Domain" type="tns:domain-name"/>
+        <xsd:element name="ServiceObjectClass" type="xsd:string"/>
+        <xsd:element name="ServiceObjectName" type="xsd:string"/>
+        <xsd:element name="ObjectExclusionList" minOccurs="0" maxOccurs="1" type="tns:config-objects"/>
+        <xsd:element name="DeleteReferencedFiles" type="xsd:boolean" default="true" minOccurs="0" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="DeleteServiceResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+        <xsd:element name="DeleteResults" type="tns:detailed-config-objects"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="DeleteFileRequest">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="File" type="tns:file-location"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="DeleteFileResponse">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Status" type="tns:status"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:endpoint>https://localhost:5550/service/mgmt/amp/3.0</con:endpoint></con:endpoints><con:operation id="8015a57d-fcff-4b09-939a-a15c5911f748" isOneWay="false" action="" name="CompareConfig" bindingOperationName="CompareConfig" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b04ca703-50cd-4eec-b393-bb6a07cacedf" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:CompareConfigRequest>
+         <ns:CompareConfig domain="?">
+            <ns:From>
+               <!--You have a CHOICE of the next 5 items at this level-->
+               <ns:Running>?</ns:Running>
+               <ns:Persistable>?</ns:Persistable>
+               <ns:Persisted>?</ns:Persisted>
+               <ns:Settings>cid:1450090397613</ns:Settings>
+               <ns:Config domain="?">cid:790350565939</ns:Config>
+            </ns:From>
+            <ns:To>
+               <!--You have a CHOICE of the next 5 items at this level-->
+               <ns:Running>?</ns:Running>
+               <ns:Persistable>?</ns:Persistable>
+               <ns:Persisted>?</ns:Persisted>
+               <ns:Settings>cid:1030123937592</ns:Settings>
+               <ns:Config domain="?">cid:1022557680667</ns:Config>
+            </ns:To>
+         </ns:CompareConfig>
+      </ns:CompareConfigRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/CompareConfigRequest"/></con:call></con:operation><con:operation id="1b9d60e1-446d-406f-aabe-41f288997d80" isOneWay="false" action="" name="DeleteDomain" bindingOperationName="DeleteDomain" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="585460ba-e004-4323-8964-fed152013418" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:DeleteDomainRequest>\r
+         <ns:Domain>?</ns:Domain>\r
+      </ns:DeleteDomainRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/DeleteDomainRequest"/></con:call></con:operation><con:operation id="1d512f90-3a81-460a-95ed-2338b8fe1862" isOneWay="false" action="" name="DeleteFile" bindingOperationName="DeleteFile" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0496ae60-f67d-4f3b-ba9a-b78f55e4008d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:DeleteFileRequest>\r
+         <ns:File domain="?" location="?" name="?"/>\r
+      </ns:DeleteFileRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/DeleteFileRequest"/></con:call></con:operation><con:operation id="8d9d05ff-fd9d-4814-9d32-188e0082c27f" isOneWay="false" action="" name="DeleteService" bindingOperationName="DeleteService" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e8038fc3-ab6a-4e44-8c1a-4b725af84cd0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:DeleteServiceRequest>
+         <ns:Domain>?</ns:Domain>
+         <ns:ServiceObjectClass>?</ns:ServiceObjectClass>
+         <ns:ServiceObjectName>?</ns:ServiceObjectName>
+      </ns:DeleteServiceRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/DeleteServiceRequest"/></con:call></con:operation><con:operation id="aa547808-72b1-4b5e-bdc3-86b917eed343" isOneWay="false" action="" name="GetCryptoArtifacts" bindingOperationName="GetCryptoArtifacts" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="57f1cdcc-4587-40a6-9d93-4b71aed9358c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:GetCryptoArtifactsRequest>\r
+         <ns:Domain>?</ns:Domain>\r
+      </ns:GetCryptoArtifactsRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetCryptoArtifactsRequest"/></con:call></con:operation><con:operation id="43d13ea6-c04b-437c-9f22-2f84eccb39e6" isOneWay="false" action="" name="GetDeviceInfo" bindingOperationName="GetDeviceInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dece1216-4503-4eb8-828b-d93ed748d651" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:GetDeviceInfoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>admin</con:username><con:password>admin</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetDeviceInfoRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f922d829-18f1-4d9b-a8c1-39825148254e" isOneWay="false" action="" name="GetDeviceSettings" bindingOperationName="GetDeviceSettings" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="135e1228-a17d-4129-8e44-1c432b449a73" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:GetDeviceSettingsRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>admin</con:username><con:password>admin</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetDeviceSettingsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="e68bde15-80ee-40c6-8ff1-f5cd3f9a83f8" isOneWay="false" action="" name="GetDomainConfig" bindingOperationName="GetDomainConfig" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b6977a36-fa3e-448a-b37b-8ec0795c1096" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:GetDomainConfigRequest>\r
+         <ns:Domain>?</ns:Domain>\r
+      </ns:GetDomainConfigRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetDomainConfigRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="250c1854-21ef-49ce-9124-a877b734a053" isOneWay="false" action="" name="GetDomainExport" bindingOperationName="GetDomainExport" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4544841b-d368-4955-bccd-636aef4eb3c4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:GetDomainExportRequest>\r
+         <ns:Domain>?</ns:Domain>\r
+      </ns:GetDomainExportRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetDomainExportRequest"/></con:call></con:operation><con:operation id="1a2cb791-bee1-4de1-9aa4-3ccd253d4ded" isOneWay="false" action="" name="GetDomainList" bindingOperationName="GetDomainList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c403e676-e1fc-4510-b167-2803c6e675d4" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetDomainListRequest/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>admin</con:username><con:password>admin</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:preemptive>true</con:preemptive><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetDomainListRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="52ca9a8d-dc80-47c0-b837-3d6a5ff353ca" isOneWay="false" action="" name="GetDomainStatus" bindingOperationName="GetDomainStatus" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ec96b671-8b4a-41b3-bfe3-c138cdfcbd76" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetDomainStatusRequest>
+         <ns:Domain>?</ns:Domain>
+      </ns:GetDomainStatusRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetDomainStatusRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f0951155-51c8-413a-9867-89b6a4c8f5fb" isOneWay="false" action="" name="GetErrorReport" bindingOperationName="GetErrorReport" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2b48256d-d02e-4c5b-96fd-60f0a5178811" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:GetErrorReportRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetErrorReportRequest"/></con:call></con:operation><con:operation id="448dba86-e608-4687-88db-cf6e76bbc764" isOneWay="false" action="" name="GetInterDependentServices" bindingOperationName="GetInterDependentServices" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fc6c4aef-c0f7-4423-b922-3c0b26efad66" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetInterDependentServicesRequest>
+         <!--You have a CHOICE of the next 2 items at this level-->
+         <ns:Config domain="?">cid:1351558558753</ns:Config>
+         <ns:ConfigFile domain="?">
+            <ns:File domain="?" location="?" name="?"/>
+         </ns:ConfigFile>
+         <ns:Services>
+            </ns:Services>
+      </ns:GetInterDependentServicesRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetInterDependentServicesRequest"/></con:call></con:operation><con:operation id="ecd3f68d-a8ae-40fd-9483-0bf2e51ba805" isOneWay="false" action="" name="GetLog" bindingOperationName="GetLog" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7fe2ffab-ce3a-4408-9ed1-88fba37d46b8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:GetLogRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetLogRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="9411fed0-b33b-4ccd-b0b7-c87088aaad61" isOneWay="false" action="" name="GetReferencedObjects" bindingOperationName="GetReferencedObjects" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c340cd5c-1255-4423-9008-8098410543e7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:GetReferencedObjectsRequest>\r
+         <ns:Domain>?</ns:Domain>\r
+         <ns:ObjectClass>?</ns:ObjectClass>\r
+         <ns:ObjectName>?</ns:ObjectName>\r
+      </ns:GetReferencedObjectsRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetReferencedObjectsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="7af9a592-0599-4a80-9e0c-51ddfcb82306" isOneWay="false" action="" name="GetServiceListFromDomain" bindingOperationName="GetServiceListFromDomain" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="43fbc24d-e93a-44a2-b27c-272b07f0bd9e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:GetServiceListFromDomainRequest>\r
+         <ns:Domain>?</ns:Domain>\r
+      </ns:GetServiceListFromDomainRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetServiceListFromDomainRequest"/></con:call></con:operation><con:operation id="77c6ddf9-1284-4e45-afb2-7611f7f3459c" isOneWay="false" action="" name="GetServiceListFromExport" bindingOperationName="GetServiceListFromExport" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5e842380-1b1d-4c7f-9673-536da0dca8f1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:GetServiceListFromExportRequest>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <ns:Config domain="?">cid:416120055109</ns:Config>\r
+         <ns:ConfigFile domain="?">\r
+            <ns:File domain="?" location="?" name="?"/>\r
+         </ns:ConfigFile>\r
+      </ns:GetServiceListFromExportRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetServiceListFromExportRequest"/></con:call></con:operation><con:operation id="7b63a743-7043-403e-a0ba-5d2c4c124c2e" isOneWay="false" action="" name="GetToken" bindingOperationName="GetToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="997eb690-bd47-48fa-b768-2eb73ab8422e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:GetTokenRequest>\r
+         <ns:Type>?</ns:Type>\r
+         <ns:User>?</ns:User>\r
+         <ns:Password>?</ns:Password>\r
+         <ns:Domain>?</ns:Domain>\r
+      </ns:GetTokenRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/GetTokenRequest"/></con:call></con:operation><con:operation id="44d5e730-e4bb-4c08-8469-77b6380e017f" isOneWay="false" action="" name="Ping" bindingOperationName="Ping" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f4a93eb5-ebf3-4b86-af0c-cb9c2ba0bc66" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:PingRequest>\r
+         <ns:SubscriptionID>?</ns:SubscriptionID>\r
+      </ns:PingRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/PingRequest"/></con:call></con:operation><con:operation id="65620541-f7de-4ad8-8373-a39584533598" isOneWay="false" action="" name="Quiesce" bindingOperationName="Quiesce" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d4b9efe5-366c-4fac-9316-fd2cd1776580" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:QuiesceRequest>
+         <!--You have a CHOICE of the next 2 items at this level-->
+      </ns:QuiesceRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/QuiesceRequest"/></con:call></con:operation><con:operation id="7a3ebefd-2582-4b12-a3a1-526809b0c37a" isOneWay="false" action="" name="Reboot" bindingOperationName="Reboot" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8a4a2a5a-bc1b-40d6-8390-6899670f24e4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:RebootRequest>\r
+         <ns:Mode>?</ns:Mode>\r
+      </ns:RebootRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/RebootRequest"/></con:call></con:operation><con:operation id="c5f668b5-567a-4a17-9c6b-108eff2547cf" isOneWay="false" action="" name="Reinitialize" bindingOperationName="Reinitialize" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b10a1300-eefc-4e43-b372-4b688526e8b2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:ReinitializeRequest>\r
+         <ns:Firmware>cid:962672112310</ns:Firmware>\r
+      </ns:ReinitializeRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/ReinitializeRequest"/></con:call></con:operation><con:operation id="8c7760c6-ea56-4e72-a004-85be3adea728" isOneWay="false" action="" name="RestartDomain" bindingOperationName="RestartDomain" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="744a5232-3168-4d88-9272-d3ef83fa7f00" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:RestartDomainRequest>\r
+         <ns:Domain>?</ns:Domain>\r
+      </ns:RestartDomainRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/RestartDomainRequest"/></con:call></con:operation><con:operation id="1dfe0aad-a303-4b31-8c41-7821d1102e97" isOneWay="false" action="" name="SecureBackup" bindingOperationName="SecureBackup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0d8d2a21-f267-44e8-ab46-1ccfe38d249c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:SecureBackupRequest>
+         <!--You have a CHOICE of the next 2 items at this level-->
+         <ns:CryptoCertificateName>?</ns:CryptoCertificateName>
+         <ns:CryptoCertificate>cid:655401479040</ns:CryptoCertificate>
+      </ns:SecureBackupRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/SecureBackupRequest"/></con:call></con:operation><con:operation id="e774ac4c-7daf-40cf-9648-530d45151916" isOneWay="false" action="" name="SecureRestore" bindingOperationName="SecureRestore" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cccacba7-038d-49f3-a74b-61ad2ece0203" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:SecureRestoreRequest>
+         <ns:CryptoCredentialName>?</ns:CryptoCredentialName>
+         <!--You have a CHOICE of the next 2 items at this level-->
+         <ns:SecureBackupSource>?</ns:SecureBackupSource>
+         <ns:SecureBackup>
+            <!--1 or more repetitions:-->
+            <ns:SecureBackupFile name="?">?</ns:SecureBackupFile>
+         </ns:SecureBackup>
+      </ns:SecureRestoreRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/SecureRestoreRequest"/></con:call></con:operation><con:operation id="5676aa6d-9f35-4011-8a7e-ce1e7d93ef7f" isOneWay="false" action="" name="SetDeviceSettings" bindingOperationName="SetDeviceSettings" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="41b48612-f24f-4761-854a-d9f0e09dc8bf" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:SetDeviceSettingsRequest>
+         <ns:Settings>cid:1409821318137</ns:Settings>
+      </ns:SetDeviceSettingsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/SetDeviceSettingsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d8462ad3-1150-4116-9ca4-779b03ebb79d" isOneWay="false" action="" name="SetDomainConfig" bindingOperationName="SetDomainConfig" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0d825791-1b0c-4f10-8e6c-64517648cd8a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:SetDomainConfigRequest>
+         <ns:Config domain="?">cid:1423227956906</ns:Config>
+      </ns:SetDomainConfigRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/SetDomainConfigRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="e9d8c31e-106e-423a-baea-b20190e99fa8" isOneWay="false" action="" name="SetDomainExport" bindingOperationName="SetDomainExport" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="69b82bd1-47e2-4e3e-8c24-721b787d785b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:SetDomainExportRequest>
+         <!--You have a CHOICE of the next 2 items at this level-->
+         <ns:Config domain="?">cid:368378244458</ns:Config>
+         <ns:ConfigFile domain="?">
+            <ns:File domain="?" location="?" name="?"/>
+         </ns:ConfigFile>
+         <!--You have a CHOICE of the next 3 items at this level-->
+      </ns:SetDomainExportRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/SetDomainExportRequest"/></con:call></con:operation><con:operation id="6afffaff-357c-4d01-aa37-d3535a3e422b" isOneWay="false" action="" name="SetFile" bindingOperationName="SetFile" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4ed92a9b-ba2e-4879-9289-cd3056dd7ce0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:SetFileRequest>\r
+         <ns:File domain="?" location="?" name="?">cid:84570068661</ns:File>\r
+      </ns:SetFileRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/SetFileRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="47415eaa-d9f9-4446-9c93-2dd2c4177014" isOneWay="false" action="" name="SetFirmware" bindingOperationName="SetFirmware" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="816ec8d7-7596-48d2-a178-a9650bdb2955" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:SetFirmwareRequest>
+         <ns:Firmware>cid:1510261097050</ns:Firmware>
+      </ns:SetFirmwareRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/SetFirmwareRequest"/></con:call></con:operation><con:operation id="04325237-1093-4a32-bc69-d94c561bf41a" isOneWay="false" action="" name="StartDomain" bindingOperationName="StartDomain" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9f64f38b-1709-4ec4-90c3-fdeb95f67461" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:StartDomainRequest>\r
+         <ns:Domain>?</ns:Domain>\r
+      </ns:StartDomainRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/StartDomainRequest"/></con:call></con:operation><con:operation id="beaf8e39-ce2c-40ab-b1a1-40e6a00aba52" isOneWay="false" action="" name="StartService" bindingOperationName="StartService" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="026694e2-8d58-443b-8cdb-25a1f66201a2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:StartServiceRequest>
+         <ns:Domain>?</ns:Domain>
+         <ns:Services>
+            </ns:Services>
+      </ns:StartServiceRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/StartServiceRequest"/></con:call></con:operation><con:operation id="de5dbafa-6c90-4703-9788-038a61cceb63" isOneWay="false" action="" name="StopDomain" bindingOperationName="StopDomain" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c450370a-0929-40b1-bb00-e79650160afb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:StopDomainRequest>\r
+         <ns:Domain>?</ns:Domain>\r
+      </ns:StopDomainRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/StopDomainRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="498bddb9-703c-48b9-a43b-89c76d4ab559" isOneWay="false" action="" name="StopService" bindingOperationName="StopService" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="22737079-576f-4009-a30b-2a1b83646c85" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:StopServiceRequest>
+         <ns:Domain>?</ns:Domain>
+         <ns:Services>
+            </ns:Services>
+      </ns:StopServiceRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/StopServiceRequest"/></con:call></con:operation><con:operation id="391a9efd-2429-4028-9f75-28f18c00275a" isOneWay="false" action="" name="Subscribe" bindingOperationName="Subscribe" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="855f9b76-a43a-430b-9553-2f1ba93ea1a5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:SubscribeRequest>\r
+         <ns:Subscription id="?">\r
+            <ns:URL>?</ns:URL>\r
+            <ns:Topics>\r
+               <!--1 or more repetitions:-->\r
+               <ns:Topic>?</ns:Topic>\r
+            </ns:Topics>\r
+         </ns:Subscription>\r
+      </ns:SubscribeRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/SubscribeRequest"/></con:call></con:operation><con:operation id="e31060dd-1ec6-4a7b-b389-02dcc26ceee0" isOneWay="false" action="" name="Unquiesce" bindingOperationName="Unquiesce" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a2633218-c3fb-4b67-933b-97ad0c254f4c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:UnquiesceRequest>
+         <!--You have a CHOICE of the next 2 items at this level-->
+      </ns:UnquiesceRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/UnquiesceRequest"/></con:call></con:operation><con:operation id="ab471af9-7643-47ca-836f-e73bcc3a55db" isOneWay="false" action="" name="Unsubscribe" bindingOperationName="Unsubscribe" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dcbbd1e5-c844-42a0-97d3-7e2067a4d332" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:UnsubscribeRequest>\r
+         <ns:Subscription id="?">\r
+            <ns:Topics>\r
+               <!--1 or more repetitions:-->\r
+               <ns:Topic>?</ns:Topic>\r
+            </ns:Topics>\r
+         </ns:Subscription>\r
+      </ns:UnsubscribeRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/UnsubscribeRequest"/></con:call></con:operation><con:operation id="49eb99ca-1baa-45e6-b996-873ce3fbc007" isOneWay="false" action="" name="WAXHNActivate" bindingOperationName="WAXHNActivate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="786e99a9-e1f7-4786-834f-c44dedd7fc7f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:WAXHNActivateRequest>\r
+         <ns:MaxCacheSize>?</ns:MaxCacheSize>\r
+      </ns:WAXHNActivateRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/WAXHNActivateRequest"/></con:call></con:operation><con:operation id="07960e16-1bc0-425a-aaae-ec8ddceacc97" isOneWay="false" action="" name="WhenDeviceLastChanged" bindingOperationName="WhenDeviceLastChanged" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a43e2037-2072-4d33-b3ba-c9d772dfb85d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://*host:port*/service/mgmt/amp/3.0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.datapower.com/schemas/appliance/management/3.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:WhenDeviceLastChangedRequest>
+         </ns:WhenDeviceLastChangedRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/schemas/appliance/management/3.0/wsdl/app-mgmt-protocol/WhenDeviceLastChangedRequest"/></con:call></con:operation></con:interface><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:sensitiveInformation/><con:authRepository><con:basicAuthEntry><con:name>admin</con:name><con:type>Basic</con:type></con:basicAuthEntry></con:authRepository><con:tags/></con:soapui-project>

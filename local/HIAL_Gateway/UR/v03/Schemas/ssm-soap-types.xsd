@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Main SSM schema; it defines all relevant data structures used in the SSM's public SOAP interface
+NOTE: All elements in type declarations are local (no 'ref' attributes) for gSOAP compatibility
+-->
+
+<xsd:schema
+    attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://security.bea.com/ssmws/ssm-soap-types-1.0.xsd"
+    version="0.1"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:ssm="http://security.bea.com/ssmws/ssm-soap-types-1.0.xsd"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:simpleType name="ServiceTypeEnum">
+        <xsd:annotation>
+            <xsd:documentation>One of the defined SSM services</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="ALES_AUDIT"/>
+            <xsd:enumeration value="ALES_AUTHENTICATION"/>
+            <xsd:enumeration value="ALES_AUTHORIZATION"/>
+            <xsd:enumeration value="ALES_CREDENTIAL"/>
+            <xsd:enumeration value="ALES_ROLE"/>
+            <xsd:enumeration value="ALES_MANAGEMENT"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="ServiceCompatibilityEnum">
+        <xsd:annotation>
+            <xsd:documentation>Defines service compatibility results</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="ALES_NOT_COMPATIBLE"/>
+            <xsd:enumeration value="ALES_COMPATIBLE"/>
+            <xsd:enumeration value="ALES_COMPATIBLE_DEPRECATED"/>
+            <xsd:enumeration value="ALES_COMPATIBLE_UNKNOWN"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="AtzDirectionEnum">
+        <xsd:annotation>
+            <xsd:documentation>Specifies authorization direction</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="ALES_ONCE"/>
+            <xsd:enumeration value="ALES_POST"/>
+            <xsd:enumeration value="ALES_PRIOR"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="AuditSeverityEnum">
+        <xsd:annotation>
+            <xsd:documentation>Specifies severity of an audit record</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="ALES_AUDIT_FAILURE"/>
+            <xsd:enumeration value="ALES_ERROR"/>
+            <xsd:enumeration value="ALES_FAILURE"/>
+            <xsd:enumeration value="ALES_INFORMATIONAL"/>
+            <xsd:enumeration value="ALES_SUCCESS"/>
+            <xsd:enumeration value="ALES_WARNING"/>
+        </xsd:restriction>
+    </xsd:simpleType>           
+    <xsd:simpleType name="TokenEncodingEnum">
+        <xsd:annotation>
+            <xsd:documentation>Specifies acceptable token encoding</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="ALES_BASE64"/>
+        </xsd:restriction>
+    </xsd:simpleType>           
+    <xsd:simpleType name="CredentialMethodEnum">
+        <xsd:annotation>
+            <xsd:documentation>Specifies a supported method of gathering credentials</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="ALES_CHOICE"/>
+            <xsd:enumeration value="ALES_CONFIRMATION"/>
+            <xsd:enumeration value="ALES_LANGUAGE"/>
+            <xsd:enumeration value="ALES_NAME"/>
+            <xsd:enumeration value="ALES_PASSWORD"/>
+            <xsd:enumeration value="ALES_TEXTINPUT"/>
+            <xsd:enumeration value="ALES_TEXTOUTPUT"/>
+        </xsd:restriction>
+    </xsd:simpleType>           
+    <xsd:simpleType name="CredentialTypeType">
+        <xsd:annotation>
+            <xsd:documentation>Describes names for supported credential types. It can be any non-empty string consisting of any number of alphanumeric characters and separators '.',':','_'</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+	    	<xsd:pattern value="[A-Za-z][A-Za-z0-9_:\.]*"/>
+        </xsd:restriction>
+    </xsd:simpleType>    
+    <xsd:simpleType name="SAMLAssertionType">
+        <xsd:annotation>
+            <xsd:documentation>Represents an element for SAML Identity Assertion.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <maxLength value='32768'/>
+        </xsd:restriction>
+    </xsd:simpleType>
+	<xsd:simpleType name="ALESIdentityAssertionType">
+        <xsd:annotation>
+            <xsd:documentation>Represents an element for proprietary ALES Identity Assertion.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+    	    <maxLength value='4096'/>
+        </xsd:restriction>
+	</xsd:simpleType>
+    <xsd:complexType name="IdentityAssertionType">
+        <xsd:annotation>
+            <xsd:documentation>
+              An acceptable user's identity assertion token with an extensibility element.
+              Name of the passed element should match one of the registered credential types.
+              Encoding rules are determined by the token type. 
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+			<xsd:any namespace="##any" maxOccurs="1" minOccurs="0" processContents="strict" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="CredentialType">
+        <xsd:annotation>
+            <xsd:documentation>Additionals types of credentials</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Info" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="Type" type="ssm:CredentialMethodEnum"/>
+<!--        
+        <xsd:anyAttribute namespace="##other" processContents="lax"/>
+-->        
+    </xsd:complexType>
+    <xsd:complexType name="IdentityCredentialType">
+        <xsd:annotation>
+            <xsd:documentation>Acceptable user's credentials</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" name="Credential" type="ssm:CredentialType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="IdentityRoleType">
+        <xsd:annotation>
+            <xsd:documentation>Represents a role assigned to an identity</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Name" type="xsd:QName"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Description" type="xsd:string"/>
+        </xsd:sequence>
+<!--        
+		<xsd:anyAttribute namespace="##other" processContents="lax"/> 
+-->
+    </xsd:complexType>            
+    <xsd:complexType name="IdentityRolesType">
+        <xsd:annotation>
+            <xsd:documentation>Represents a role collection</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" name="Roles" type="ssm:IdentityRoleType"/>
+	        <xsd:element maxOccurs="1" minOccurs="0" name="RolesTtlAdvice" type="xsd:int"/>
+        </xsd:sequence>
+    </xsd:complexType>            
+    <xsd:complexType name="CredentialTypesType">
+        <xsd:annotation>
+            <xsd:documentation>Array of credential types</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" name="CredentialType" type="ssm:CredentialTypeType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+	<xsd:complexType name="ChallengeType">
+        <xsd:annotation>
+            <xsd:documentation>Challenge for authentication handshake</xsd:documentation>
+        </xsd:annotation>
+        <xsd:all>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ChallengeCode" type="xsd:NCName"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ChallengeState" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Blob" type="xsd:base64Binary"/>
+        </xsd:all>
+<!--        
+        <xsd:attribute name="Algorithm" type="xsd:QName" use="optional"/>
+        <xsd:anyAttribute namespace="##other" processContents="lax"/>
+-->
+	</xsd:complexType>            
+    <xsd:complexType name="ContextRequestsType">
+        <xsd:annotation>
+            <xsd:documentation>Array of context challenges</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" name="ContextAttribute" type="xsd:QName"/>
+        </xsd:sequence>
+<!--        
+        <xsd:anyAttribute namespace="##other" processContents="lax"/>
+-->    
+    </xsd:complexType>
+	<xsd:simpleType name="IpType">
+        <xsd:annotation>
+            <xsd:documentation>This type represents an IP address XXX.XXX.XXX.XXX</xsd:documentation>
+        </xsd:annotation>
+	  <xsd:restriction base="xsd:string">
+	    <xsd:pattern value="(\d{1,3}\.){3}\d{1,3}"/>
+	  </xsd:restriction>
+	</xsd:simpleType>	
+    <xsd:complexType name="ContextRecordType">
+        <xsd:annotation>
+            <xsd:documentation>Name/value pair to pass context data</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="RecordName" type="xsd:QName"/>
+	        <xsd:choice>
+	            <xsd:element maxOccurs="1" minOccurs="1" name="StringValue" type="xsd:string"/>
+	            <xsd:element maxOccurs="1" minOccurs="1" name="BoolValue" type="xsd:boolean"/>
+	            <xsd:element maxOccurs="1" minOccurs="1" name="DateTimeValue" type="xsd:dateTime"/>
+	            <xsd:element maxOccurs="1" minOccurs="1" name="TimeValue" type="xsd:time"/>
+	            <xsd:element maxOccurs="1" minOccurs="1" name="IntValue" type="xsd:int"/>
+	            <xsd:element maxOccurs="1" minOccurs="1" name="IpValue"  type="ssm:IpType"/>
+	        </xsd:choice>
+        </xsd:sequence>
+<!--        
+        <xsd:anyAttribute namespace="##other" processContents="lax"/>
+-->    
+    </xsd:complexType>
+    <xsd:complexType name="ContextType">
+        <xsd:annotation>
+            <xsd:documentation>Structure for passing context data</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" name="Record" type="ssm:ContextRecordType"/>
+        </xsd:sequence>
+<!--        
+        <xsd:attribute name="Type" type="xsd:QName" use="optional"/>
+        <xsd:anyAttribute namespace="##other" processContents="lax"/>
+-->
+    </xsd:complexType>
+    <xsd:complexType name="ServiceVersionType">
+        <xsd:annotation>
+            <xsd:documentation>Used to pass service version information</xsd:documentation>
+        </xsd:annotation>
+        <xsd:all>
+            <xsd:element maxOccurs="1" minOccurs="1" name="MajorVersion" type="xsd:int"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="MinorVersion" type="xsd:int"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="PatchLevel" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Version" type="xsd:long"/>
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="EmptyAttributedType">
+        <xsd:annotation>
+            <xsd:documentation>Specifies an empty type with any attribute</xsd:documentation>
+        </xsd:annotation>
+<!--        
+		<xsd:anyAttribute namespace="##any" processContents="lax"/> 
+-->
+    </xsd:complexType>
+    <xsd:complexType name="RuntimeActionType">
+        <xsd:annotation>
+            <xsd:documentation>Represents a runtime action</xsd:documentation>
+        </xsd:annotation>
+        <xsd:all>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ActionString" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="AuthorityName" type="xsd:string"/>
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="RuntimeResourceType">
+        <xsd:annotation>
+            <xsd:documentation>Represents a runtime resource</xsd:documentation>
+        </xsd:annotation>
+        <xsd:all>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ResourceString" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="AuthorityName" type="xsd:string"/>
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="AuditRecordType">
+        <xsd:annotation>
+            <xsd:documentation>Represents an audit record</xsd:documentation>
+        </xsd:annotation>
+        <xsd:all>
+            <xsd:element maxOccurs="1" minOccurs="1" name="AuthorityName" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Severity" type="ssm:AuditSeverityEnum"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Message" type="xsd:string"/>
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="FaultInfoType">
+        <xsd:annotation>
+            <xsd:documentation>Represents a server-side error</xsd:documentation>
+        </xsd:annotation>
+        <xsd:all>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Description" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="TextInfo" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="BinInfo" type="xsd:base64Binary"/>
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:complexType name="AtzDecisionDataType">
+        <xsd:annotation>
+            <xsd:documentation>Represents data accompanying authorization decisions</xsd:documentation>
+        </xsd:annotation>
+        <xsd:all>
+	        	<xsd:element maxOccurs="1" minOccurs="0" name="AtzTtlAdvice" type="xsd:int"/>
+            	<xsd:element maxOccurs="1" minOccurs="0" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+                <xsd:element maxOccurs="1" minOccurs="0" name="IdentityRoles" type="ssm:IdentityRolesType"/>
+            	<xsd:element maxOccurs="1" minOccurs="0" name="Responses" type="ssm:ContextType"/>
+        </xsd:all>
+    </xsd:complexType>    
+    
+<!-- Types for "wrapped" document style 
+ NOTE: nillable="true" is used instead of minOccurs="0" to indicate optional elements. This is done to accomodate buggy
+ implementation of optional parameters in Axis 1.1
+-->
+    <xsd:complexType name="IsCompatibleType">
+        <xsd:annotation>
+            <xsd:documentation>Service compatibility check request's wrapper</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ServiceVersion" type="ssm:ServiceVersionType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="AuthenticateType">
+        <xsd:annotation>
+            <xsd:documentation>Authentication request's wrapper</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+           	<xsd:element maxOccurs="1" minOccurs="1" name="IdentityCredential" type="ssm:IdentityCredentialType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="RequestedCredentialType" type="ssm:CredentialTypeType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="AssertIdentityType">
+        <xsd:annotation>
+            <xsd:documentation>Identity assertion request's wrapper</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+           	<xsd:element maxOccurs="1" minOccurs="1" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="RequestedCredentialType" type="ssm:CredentialTypeType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="IsAssertionTokenSupportedType">
+        <xsd:annotation>
+            <xsd:documentation>Token type check request's wrapper</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="AssertionCredentialType" type="ssm:CredentialTypeType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ValidateIdentityType">
+        <xsd:annotation>
+            <xsd:documentation>Token validation request's wrapper</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+        </xsd:sequence>
+    </xsd:complexType>            
+    <xsd:complexType name="IsAccessAllowedType">
+        <xsd:annotation>
+            <xsd:documentation>Authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeResource" type="ssm:RuntimeResourceType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeAction" type="ssm:RuntimeActionType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="RequestedCredentialType" type="ssm:CredentialTypeType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AtzDirection" type="ssm:AtzDirectionEnum"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="IsChildResourceAccessAllowedType">
+        <xsd:annotation>
+            <xsd:documentation>Authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="ResourceAction" type="ssm:ResourceActionType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="RequestedCredentialType" type="ssm:CredentialTypeType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+	
+    <xsd:complexType name="ResourceActionType">
+        <xsd:annotation>
+            <xsd:documentation>Resource Action Pair</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeResource" type="ssm:RuntimeResourceType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeAction" type="ssm:RuntimeActionType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="IsBulkAccessAllowedType">
+        <xsd:annotation>
+            <xsd:documentation>Bulk Authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+		    <xsd:element maxOccurs="unbounded" minOccurs="1" name="ResourceAction" type="ssm:ResourceActionType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="RequestedCredentialType" type="ssm:CredentialTypeType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="IsAuthenticationRequiredType">
+        <xsd:annotation>
+            <xsd:documentation>Request to check whether resource is protected</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeResource" type="ssm:RuntimeResourceType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeAction" type="ssm:RuntimeActionType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="GetCredentialsType">
+        <xsd:annotation>
+            <xsd:documentation>Credential mapping request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="RequestedCredentialTypes" type="ssm:CredentialTypesType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeResource" type="ssm:RuntimeResourceType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeAction" type="ssm:RuntimeActionType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+        </xsd:sequence>
+    </xsd:complexType>            
+    <xsd:complexType name="GetRolesType">
+        <xsd:annotation>
+            <xsd:documentation>Request for user roles</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeResource" type="ssm:RuntimeResourceType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeAction" type="ssm:RuntimeActionType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+        </xsd:sequence>
+    </xsd:complexType>            
+    <xsd:complexType name="RecordEventType">
+        <xsd:annotation>
+            <xsd:documentation>Auditing request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="AuditRecord" type="ssm:AuditRecordType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SsmIdType">
+        <xsd:annotation>
+            <xsd:documentation>Service locating request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>                
+            <xsd:element maxOccurs="1" minOccurs="1" name="ServiceType" type="ssm:ServiceTypeEnum"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="SsmId" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="AuthenticationResultType">
+        <xsd:annotation>
+            <xsd:documentation>Response to an authentication request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>                
+            <xsd:choice>
+                <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+	            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="Challenge" type="ssm:ChallengeType" />
+            </xsd:choice>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" nillable="true" name="StatusInfo" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="AuthorizationResultType">
+        <xsd:annotation>
+            <xsd:documentation>Response to an authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="AccessAllowed" type="xsd:boolean"/>
+            <xsd:choice>
+            	<xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AtzDecisionData" type="ssm:AtzDecisionDataType"/>
+                <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="ContextRequests" type="ssm:ContextRequestsType"/>
+            </xsd:choice>
+        </xsd:sequence>
+    </xsd:complexType>
+
+	<!-- for bulk authorization API -->
+    <xsd:complexType name="ExtendedAuthorizationResultType">
+        <xsd:annotation>
+            <xsd:documentation>Response to a bulk authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+				<xsd:element maxOccurs="1" minOccurs="1" name="RuntimeResource" type="ssm:RuntimeResourceType"/>
+				<xsd:element maxOccurs="1" minOccurs="1" name="RuntimeAction" type="ssm:RuntimeActionType"/>
+                <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AtzResult" type="ssm:AuthorizationResultType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="BulkChildAuthorizationResultType">
+        <xsd:annotation>
+            <xsd:documentation>Response to a bulk authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+                <xsd:element maxOccurs="unbounded" minOccurs="1" nillable="true" name="AtzResult" type="ssm:ExtendedAuthorizationResultType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="BulkAuthorizationResultType">
+        <xsd:annotation>
+            <xsd:documentation>Response to a bulk authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+                <xsd:element maxOccurs="unbounded" minOccurs="1" nillable="true" name="AtzResult" type="ssm:ExtendedAuthorizationResultType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="GetCredentialsResultType">
+        <xsd:annotation>
+            <xsd:documentation>Response to a credential mapping request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" nillable="true" name="MissingTypes" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="IdentityCredential" type="ssm:IdentityCredentialType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" nillable="true" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+        </xsd:sequence>
+    </xsd:complexType>            
+    
+    <xsd:complexType name="DoesServiceExistResponseType">
+        <xsd:annotation>
+            <xsd:documentation>Response to an authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="doesServiceExistResponse" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="getParameterValueType">
+        <xsd:annotation>
+            <xsd:documentation>Request parameter of getParameterValue request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="getParameterValue" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="getParameterValueResponseType">
+        <xsd:annotation>
+            <xsd:documentation>Response to an getParameterValue request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="getParameterValueResponse" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="RecordEventResponseType">
+        <xsd:annotation>
+            <xsd:documentation>Response to a record event request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="recordEventResponse" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="AuthenticationRequiredResponseType">
+        <xsd:annotation>
+            <xsd:documentation>Response to an authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="isAuthenticationRequiredResponse" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="AssertionTokenSupportedResponseType">
+        <xsd:annotation>
+            <xsd:documentation>Response to an authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="isAssertionTokenSupportedResponse" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ValidateIdentityResponseType">
+        <xsd:annotation>
+            <xsd:documentation>Response to an authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="validateIdentityResponse" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ComplexAnyURI">
+        <xsd:annotation>
+            <xsd:documentation>A complex URI</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="locateServiceResponse" type="xsd:anyURI"/>
+        </xsd:sequence>
+    </xsd:complexType>   
+    <xsd:complexType name="GetServiceTypeReturnType">
+        <xsd:annotation>
+            <xsd:documentation>Return type from the getServiceType method</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ServiceType" type="ssm:ServiceTypeEnum"/>
+        </xsd:sequence>
+    </xsd:complexType>   
+    <xsd:complexType name="IsCompatibleReturnType">
+        <xsd:annotation>
+            <xsd:documentation>Return type from the isCompatible method</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Value" type="ssm:ServiceCompatibilityEnum"/>
+        </xsd:sequence>
+    </xsd:complexType>   
+
+	<xsd:complexType name="RequestedActionsType">
+		<xsd:annotation>
+			<xsd:documentation>Wrapper the requested actions</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="1" name="Actions" type="ssm:RuntimeActionType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="QueryActionsOnResourceType">
+		<xsd:annotation>
+			<xsd:documentation>Query actions on resource request</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="RuntimeResource" type="ssm:RuntimeResourceType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="RequestedActions" type="ssm:RequestedActionsType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="QueryActionsOnResourceResultType">
+		<xsd:annotation>
+			<xsd:documentation>Response to an Query actions on resource request</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="RuntimeEntitlement" type="ssm:RuntimeEntitlementType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="ResponseContext" type="ssm:ContextType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="RuntimeEntitlementType">
+		<xsd:annotation>
+			<xsd:documentation>Represents a set of granted and denied actions on a resource</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="RuntimeResource" type="ssm:RuntimeResourceType"/>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="GrantedActions" type="ssm:RuntimeActionType"/>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="DeniedActions" type="ssm:RuntimeActionType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="QueryActionsOnChildResourceType">
+		<xsd:annotation>
+			<xsd:documentation>Query actions on child resource request </xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="RuntimeResource" type="ssm:RuntimeResourceType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="RequestedActions" type="ssm:RequestedActionsType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="QueryActionsOnChildResourceResultType">
+		<xsd:annotation>
+			<xsd:documentation>Response to an Query actions on child resource request</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="EntitlementList" type="ssm:RuntimeEntitlementType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="ResponseContext" type="ssm:ContextType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+    
+    <xsd:complexType name="ConstraintAttributeType">
+        <xsd:annotation>
+            <xsd:documentation>Represents attribute and its value used in a policy constraint</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Name" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Type" type="xsd:int"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="Value" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="DataType" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="AuthorizationPolicyType">
+        <xsd:annotation>
+            <xsd:documentation>Represents evaluated Authorization policy</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="PolicyEvaluationResult" type="xsd:boolean"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="PolicyType" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Privilege" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Resource" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Subject" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="Constraints" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="Delegator" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="Notes" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="AttributeList" type="ssm:ConstraintAttributeType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="RolePolicyType">
+        <xsd:annotation>
+            <xsd:documentation>Represents evaluated Role policy</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="PolicyEvaluationResult" type="xsd:boolean"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="PolicyType" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Role" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Resource" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Subject" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="Constraints" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="Delegator" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="Notes" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="AttributeList" type="ssm:ConstraintAttributeType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="UserInfoType">
+        <xsd:annotation>
+            <xsd:documentation>Information about "user" making request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="QualifiedGroupNameList" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="QualifiedUserName" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DebugInfoType">
+        <xsd:annotation>
+            <xsd:documentation>Store the evaluation results for Authorization and user roles request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="AuthorizationPolicyList" type="ssm:AuthorizationPolicyType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="GrantedRoleList" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="RolePolicyList" type="ssm:RolePolicyType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="UserInfo" type="ssm:UserInfoType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="ResourceLocated" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="IsAccessAllowedDebugType">
+        <xsd:annotation>
+            <xsd:documentation>Debug Authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeResource" type="ssm:RuntimeResourceType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeAction" type="ssm:RuntimeActionType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="RequestedCredentialType" type="ssm:CredentialTypeType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="AuthorizationDebugResultType">
+        <xsd:annotation>
+            <xsd:documentation>Response to a debug authorization request</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="AccessAllowed" type="xsd:boolean"/>
+            <xsd:choice>
+            	<xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AtzDecisionData" type="ssm:AtzDecisionDataType"/>
+                <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="ContextRequests" type="ssm:ContextRequestsType"/>
+            </xsd:choice>
+            <xsd:element maxOccurs="1" minOccurs="1" name="DebugInfo" type="ssm:DebugInfoType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="GetRolesDebugType">
+        <xsd:annotation>
+            <xsd:documentation>Debug request for user roles</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="IdentityAssertion" type="ssm:IdentityAssertionType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeResource" type="ssm:RuntimeResourceType"/>
+		    <xsd:element maxOccurs="1" minOccurs="1" name="RuntimeAction" type="ssm:RuntimeActionType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" nillable="true" name="AppContext" type="ssm:ContextType"/>
+        </xsd:sequence>
+    </xsd:complexType>            
+    <xsd:complexType name="GetRolesDebugResponseType">
+        <xsd:annotation>
+            <xsd:documentation>Represents a role collection</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" name="Roles" type="ssm:IdentityRoleType"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="DebugInfo" type="ssm:DebugInfoType"/>
+	        <xsd:element maxOccurs="1" minOccurs="0" name="RolesTtlAdvice" type="xsd:int"/>
+        </xsd:sequence>
+    </xsd:complexType>            
+
+<!-- Elements for "wrapped" document style -->
+    <xsd:element name="getServiceType" type="ssm:EmptyAttributedType"/>
+    <xsd:element name="getVersion" type="ssm:EmptyAttributedType"/>
+    <xsd:element name="isCompatible" type="ssm:IsCompatibleType"/>
+    <xsd:element name="authenticate" type="ssm:AuthenticateType"/>
+    <xsd:element name="assertIdentity" type="ssm:AssertIdentityType"/>
+    <xsd:element name="isAssertionTokenSupported" type="ssm:IsAssertionTokenSupportedType"/>
+    <xsd:element name="validateIdentity" type="ssm:ValidateIdentityType"/>
+    <xsd:element name="isAccessAllowed" type="ssm:IsAccessAllowedType"/>
+    <xsd:element name="isAuthenticationRequired" type="ssm:IsAuthenticationRequiredType"/>
+    <xsd:element name="getCredentials" type="ssm:GetCredentialsType"/>
+    <xsd:element name="getRoles" type="ssm:GetRolesType"/>
+    <xsd:element name="recordEvent" type="ssm:RecordEventType"/>
+    <xsd:element name="locateService" type="ssm:SsmIdType"/>
+    <xsd:element name="doesServiceExist" type="ssm:SsmIdType"/>
+    <xsd:element name="getServiceTypeResponse" type="ssm:GetServiceTypeReturnType"/>
+    <xsd:element name="getVersionResponse" type="ssm:ServiceVersionType"/>
+    <xsd:element name="isCompatibleResponse" type="ssm:IsCompatibleReturnType"/>
+    <xsd:element name="authenticateResponse" type="ssm:AuthenticationResultType"/>
+    <xsd:element name="assertIdentityResponse" type="ssm:AuthenticationResultType"/>
+    <xsd:element name="isAssertionTokenSupportedResponse" type="ssm:AssertionTokenSupportedResponseType"/>
+    <xsd:element name="validateIdentityResponse" type="ssm:ValidateIdentityResponseType"/>
+    <xsd:element name="isAccessAllowedResponse" type="ssm:AuthorizationResultType"/>
+    <xsd:element name="isAuthenticationRequiredResponse" type="ssm:AuthenticationRequiredResponseType"/>
+    <xsd:element name="getCredentialsResponse" type="ssm:GetCredentialsResultType"/>
+    <xsd:element name="getRolesResponse" type="ssm:IdentityRolesType"/>
+    <xsd:element name="locateServiceResponse" type="ssm:ComplexAnyURI"/>
+    <xsd:element name="doesServiceExistResponse" type="ssm:DoesServiceExistResponseType"/>
+    <xsd:element name="recordEventResponse" type="ssm:RecordEventResponseType"/>    
+    <xsd:element name="getParameterValue" type="ssm:getParameterValueType"/>
+    <xsd:element name="getParameterValueResponse" type="ssm:getParameterValueResponseType"/>  
+    <xsd:element name="queryActionsOnResource" type="ssm:QueryActionsOnResourceType"/>
+    <xsd:element name="queryActionsOnChildResource" type="ssm:QueryActionsOnChildResourceType"/>
+    <xsd:element name="queryActionsOnResourceResponse" type="ssm:QueryActionsOnResourceResultType"/>
+    <xsd:element name="queryActionsOnChildResourceResponse" type="ssm:QueryActionsOnChildResourceResultType"/>
+ 
+    <xsd:element name="serviceFailure" type="ssm:FaultInfoType"/>
+    <xsd:element name="authenticationFailure" type="ssm:FaultInfoType"/>
+    <xsd:element name="authorizationFailure" type="ssm:FaultInfoType"/>
+    <xsd:element name="credentialMappingFailure" type="ssm:FaultInfoType"/>
+    <xsd:element name="roleMappingFailure" type="ssm:FaultInfoType"/>
+    <xsd:element name="auditingFailure" type="ssm:FaultInfoType"/>
+    <xsd:element name="registryFailure" type="ssm:FaultInfoType"/>
+    <xsd:element name="xacmlFailure" type="ssm:FaultInfoType"/>
+
+	<!-- for bulk authorization API -->
+    <xsd:element name="isBulkAccessAllowed" type="ssm:IsBulkAccessAllowedType"/>
+    <xsd:element name="isBulkAccessAllowedResponse" type="ssm:BulkAuthorizationResultType"/>
+    <xsd:element name="isChildResourceAccessAllowed" type="ssm:IsChildResourceAccessAllowedType"/>
+    <xsd:element name="isChildResourceAccessAllowedResponse" type="ssm:BulkChildAuthorizationResultType"/>
+	
+	<!-- for debug authorization and get roles API -->
+    <xsd:element name="isAccessAllowedDebug" type="ssm:IsAccessAllowedDebugType"/>
+    <xsd:element name="isAccessAllowedDebugResponse" type="ssm:AuthorizationDebugResultType"/>
+    <xsd:element name="getRolesDebug" type="ssm:GetRolesDebugType"/>
+    <xsd:element name="getRolesDebugResponse" type="ssm:GetRolesDebugResponseType"/>
+
+</xsd:schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy wsrr:policyClass="WSME1_7PolicyClass" wsrr:policyClassDomain="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" Name="urn:GWLogResponseRule_Y_e4fc0970-3457-11e5-b248-d09af6548ee5_f83f4cfd-559b-494e-8b51-bdc86a418ad8" wsrr:__displayName="GWLogResponseRule_Y" xmlns:wsme="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" xmlns:wsrr="http://www.ibm.com/xmlns/prod/serviceregistry/6/2/wspolicy" xmlns:wsp="http://www.w3.org/ns/ws-policy">
+	<wsme:Rule>
+		<wsme:Action IfCondition="true">
+			<wsme:ExecuteXSL>
+				<wsme:Parameter Name="Enforce" Value="true"/>
+				<wsme:Parameter Name="TransientDataMap" Value="IdentityHub_TransientDataMap_Logging"/>
+				<wsme:Stylesheet>local:///Framework/ProcessingFlow/LogTransiantData.xsl</wsme:Stylesheet>
+			</wsme:ExecuteXSL>
+		</wsme:Action>
+	</wsme:Rule>
+</wsp:Policy>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy wsrr:policyClass="WSME1_7PolicyClass" wsrr:policyClassDomain="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" Name="urn:SOAPFaultProcessing_Y_PPRFHIR_25b3e8a0-3994-11e7-9a6b-ad3bd3718859_b13ec83f-4fcc-4254-8813-e6fbe52ca7ec" wsrr:__displayName="SOAPFaultProcessing_Y_PPRFHIR" xmlns:wsme="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" xmlns:wsrr="http://www.ibm.com/xmlns/prod/serviceregistry/6/2/wspolicy" xmlns:wsp="http://www.w3.org/ns/ws-policy">
+	<wsme:Rule>
+		<wsme:Action IfCondition="true">
+			<wsme:ExecuteXSL>
+				<wsme:Parameter Name="Enforce" Value="true"/>
+				<wsme:Stylesheet>local:///Framework/ProcessingFlow/PPRFHIRFaultProcessing.xsl</wsme:Stylesheet>
+			</wsme:ExecuteXSL>
+		</wsme:Action>
+	</wsme:Rule>
+</wsp:Policy>

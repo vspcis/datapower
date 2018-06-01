@@ -1,0 +1,32 @@
+172.17.0.2
+
+
+
+docker run -it \
+   -v $PWD/config:/drouter/config \
+   -v $PWD/local:/drouter/local \
+   -e DATAPOWER_ACCEPT_LICENSE=true \
+   -e DATAPOWER_INTERACTIVE=true \
+   -p 9090:9090 \
+   -p 9022:22 \
+   -p 5554:5554 \
+   -p 5550:5550 \
+   -p 8009:8009 \
+   -p 8013:8013 \
+   -p 7102:7102 \
+   -p 7180:7180 \
+   -p 7380:7380 \
+   -p 10100:10100 \
+   --name datapower \
+   ibmcom/datapower
+
+
+GTWY_HTTP_FSH	saved	up	enabled	http front side handler for hial gateway	HIAL_GATEWAY	7102		
+IF_BKBN_WSP_FSH	saved	up	enabled	Internal interface between GTWY WSP and BKBN WSP	HIAL_GATEWAY	10100		
+Initialization_Pattern_Fsh	saved	up	enabled		HIAL_GATEWAY	8009
+
+MUTUAL_HTTPS_FSH	saved	up	enabled	two way SSL https frontside handler	HIAL_GATEWAY	7180	proxy	Mutual_SSL_ProxyProfile				
+ONEWAY_HTTPS_FSH	saved	up	enabled		HIAL_GATEWAY	7380	proxy	OneWay_SSL_ProxyProfile	
+
+https://10.69.0.110:7180/P/V3-20100910L/XML/CGTA_AR000001CG
+https://localhost:7180/P/V3-20100910L/XML/CGTA_AR000001CG

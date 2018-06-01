@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wsdl><Name>PIXManagerV2_V01_Definition.wsdl</Name><Operations><Operation><Name>PIXManager_PIXv2_QBP_Q21</Name><InputWSAction>ITI-9</InputWSAction><OutputWSAction>ITI-9-Response</OutputWSAction><Policies/></Operation></Operations></Wsdl>

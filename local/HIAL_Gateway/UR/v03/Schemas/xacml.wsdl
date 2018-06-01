@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xacml-context="urn:oasis:names:tc:xacml:2.0:context:schema:os" xmlns:xacml-samlp="urn:oasis:xacml:2.0:saml:protocol:schema:os" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ssm="http://security.bea.com/ssmws/ssm-soap-types-1.0.xsd" xmlns:tns="http://security.bea.com/ssmws/ssm-ws-1.0.wsdl" targetNamespace="http://security.bea.com/ssmws/ssm-ws-1.0.wsdl">
+	<types>
+		<xs:schema>
+		<!-- note this policy schema is not a full one. it is stripped for the XACML runtime only -->
+		<xs:import namespace="urn:oasis:names:tc:xacml:2.0:policy:schema:os" schemaLocation="access_control-xacml-2.0-policy-schema-os.xsd"/>
+		<xs:import namespace="urn:oasis:names:tc:xacml:2.0:context:schema:os" schemaLocation="access_control-xacml-2.0-context-schema-os.xsd"/>
+		<xs:import namespace="urn:oasis:xacml:2.0:saml:protocol:schema:os" schemaLocation="access_control-xacml-2.0-saml-protocol-schema-os.xsd"/>
+		<xs:import namespace="urn:oasis:names:tc:SAML:2.0:protocol" schemaLocation="saml-schema-protocol-2.0.xsd"/>
+		<!-- for fault types -->
+		<xs:import namespace="http://security.bea.com/ssmws/ssm-soap-types-1.0.xsd" schemaLocation="ssm-soap-types.xsd"/>
+		</xs:schema>
+	</types>
+	<message name="XACMLAtzDecisionRequest">
+		<part name="param" element="xacml-context:Request"/>
+	</message>
+	<message name="XACMLAtzDecisionResponse">
+		<part name="param" element="xacml-context:Response"/>
+	</message>
+	<message name="XACMLFault">
+		<part name="fault" element="ssm:xacmlFailure"/>
+	</message>
+	<message name="serviceFault">
+		<part name="fault" element="ssm:serviceFailure"/>
+	</message>
+	<message name="XACMLSAMLAtzDecisionRequest">
+		<part name="param" element="xacml-samlp:XACMLAuthzDecisionQuery"/>
+	</message>
+	<message name="XACMLSAMLAtzDecisionResponse">
+		<part name="param" element="samlp:Response"/>
+	</message>
+	<portType name="XACMLPort">
+		<operation name="authorize">
+			<input message="tns:XACMLAtzDecisionRequest"/>
+			<output message="tns:XACMLAtzDecisionResponse"/>
+			<fault name="serviceFault" message="tns:serviceFault"/>
+			<fault name="xacmlFault" message="tns:XACMLFault"/>
+		</operation>
+		<operation name="XACMLAuthzDecisionQuery">
+			<input message="tns:XACMLSAMLAtzDecisionRequest"/>
+			<output message="tns:XACMLSAMLAtzDecisionResponse"/>
+			<fault name="serviceFault" message="tns:serviceFault"/>
+			<fault name="xacmlFault" message="tns:XACMLFault"/>
+		</operation>
+	</portType>
+	<binding name="XACMLBinding" type="tns:XACMLPort">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<!-- Axis has problem support this wrapped style, use document instead. -->
+		<operation name="authorize">
+			<soap:operation soapAction="ssmws:xacml:authorization" style="document"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="serviceFault">
+				<soap:fault name="serviceFault" use="literal"/>
+			</fault>
+			<fault name="xacmlFault">
+				<soap:fault name="xacmlFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="XACMLAuthzDecisionQuery">
+			<soap:operation soapAction="ssmws:xacml:XACMLAuthzDecisionQuery" style="document"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="serviceFault">
+				<soap:fault name="serviceFault" use="literal"/>
+			</fault>
+			<fault name="xacmlFault">
+				<soap:fault name="xacmlFault" use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="XACMLService">
+		<port name="XACMLAuthorization" binding="tns:XACMLBinding">
+			<soap:address location="http://localhost/XACMLAuthorization"/>
+		</port>
+	</service>
+</definitions>

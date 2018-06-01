@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoggingConfig>
+   <Facilities> 
+       <Facility type="TRN" level="debug">
+           <Group type="PRC" level="debug"/>
+           <Group type="TRD" level="debug"/>
+           <Group type="PCY" level="debug"/>
+           <Group type="EHF" level="debug"/>
+       </Facility>
+       <Facility type="APP" level="debug">
+           <Group type="GCH" level="debug"/>
+       </Facility>
+   </Facilities>
+    <LoggingPriorities>
+        <Priority level="debug" allowed="debug,information,notice,warning,error,critical,alert,emergency"/>
+    </LoggingPriorities> 
+</LoggingConfig>

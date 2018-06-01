@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wsdl><Name>PatientDemographicsSupplierV2_V01_Definition.wsdl</Name><Operations><Operation><Name>PDSupplier_PDQv2_QBP_Q21</Name><InputWSAction>ITI-21</InputWSAction><OutputWSAction>ITI-21-Response</OutputWSAction><Policies/></Operation></Operations></Wsdl>

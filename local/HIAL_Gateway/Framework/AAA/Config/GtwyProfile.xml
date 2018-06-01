@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile profileDate="March-21-2012" samlADGroupMembership="CN=STS Signing Authority,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" profileVersion="1" applicationOID="2.16">
+	<!--CDMS_DATA_PUBLISH -->
+	<Service name="CDMS_DATA_PUBLISH_GTWY_WSP" gatewayUri="/services/CDMS/DataPublish" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<!--OLIS_DATA_PUBLISH_GTWY_WSP3.2 -->
+	<Service name="OLIS_DATA_PUBLISH_GTWY_WSP" gatewayUri="/services/OLIS/DataBroker/LabReportsPublication/V03" returnOriginalFault="true" version="1" />
+	<!--CR -->
+	<Service name="CR_GTWY_WSP" gatewayUri="/services/Client/ClientRegistryService" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<!--CR_AD_GTWY_WSP -->
+	<Service name="CR_AD_GTWY_WSP" gatewayUri="/services/Client/ClientRegistryService" sslADGroupMembership="CN=ClientRegistry_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<!--DPV AD Services -->
+	<Service name="DPV_AD_GTWY_WSP" gatewayUri="/services/Medication/DPV/RecipientInquiry" sslADGroupMembership="CN=ODBq_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<Service name="DPV_AD_GTWY_WSP" gatewayUri="/services/Medication/DPV/DrugHistorySummary" sslADGroupMembership="CN=ODBq_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<Service name="DPV_AD_GTWY_WSP" gatewayUri="/services/Medication/DPV/DrugHistoryDetail" sslADGroupMembership="CN=ODBq_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<!--DPV Services -->
+	<Service name="DPV_GTWY_WSP" gatewayUri="/services/Medication/RecipientInquiry" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<Service name="DPV_GTWY_WSP" gatewayUri="/services/Medication/DrugHistoryDetail" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<!--EMPI -->
+	<Service name="EMPI_GTWY_WSP" gatewayUri="/initiatews/services/IdentityHub" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<!--NOTIFICATION -->
+	<Service name="NOTIFICATION_GTWY_WSP" gatewayUri="/P/20110601L/XML/BroadcastService" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<!--OLIS -->
+	<Service name="OLIS_GTWY_WSP" gatewayUri="/services/Laboratory/OLIS" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<!--OLIS DLGT-->
+  	<Service name="OLIS_DLGT_GTWY_WSP" gatewayUri="/Lab/LabSubmissionAndQuery/OLIS" sslADGroupMembership="" returnOriginalFault="true" version="1"/>
+  	<Service name="OLIS_DLGT_GTWY_WSP" gatewayUri="/ssha.olis.webservices.ER7/OLIS.asmx" sslADGroupMembership="" returnOriginalFault="true" version="1"/> 
+	<!--OLIS_LAB -->
+	<Service name="OLIS_LAB_GTWY_WSP" gatewayUri="/services/Laboratory/COIL" sslADGroupMembership="CN=OLISq_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<!--OLIS_SUB -->
+	<Service name="OLIS_SUB_GTWY_WSP" gatewayUri="/services/Laboratory/OLIS/SubscriptionService" sslADGroupMembership="CN=OLISq_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<!--OLIS_SUB3.2 -->
+	<Service name="OLIS_SUB_GTWY_WSP" gatewayUri="/OLIS/DataBroker/LabReportsSubscription/V03" sslADGroupMembership="CN=OLISq_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<!--PcCR_GTWY_WSP -->
+	<Service name="PcCR_GTWY_WSP" gatewayUri="/P/V3-MR200903/XML/PRPA_AR101102CA" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<Service name="PcCR_GTWY_WSP" gatewayUri="/P/V3-MR200903/XML/PRPA_AR101202CA" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<Service name="PcCR_GTWY_WSP" gatewayUri="/P/V3-MR200903/XML/PRPA_AR101002CA" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<!--PORTAL -->
+	<Service name="PORTAL_GTWY_WSP" gatewayUri="/r2/dit/producer/WSRPServiceDescriptionService_v2" sslADGroupMembership="CN=PortalServices_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<Service name="PORTAL_GTWY_WSP" gatewayUri="/r2/dit/producer/WSRPPortletManagementService_v2" sslADGroupMembership="CN=PortalServices_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<Service name="PORTAL_GTWY_WSP" gatewayUri="/r2/dit/producer/WSRPBaseService_v2" sslADGroupMembership="CN=PortalServices_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+
+  <!--PORTAL2 duplicated -->
+  <Service name="PORTAL2_GTWY_WSP" gatewayUri="/r2/dit/producer/WSRPServiceDescriptionService_v22" sslADGroupMembership="CN=PortalServices_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+  <Service name="PORTAL2_GTWY_WSP" gatewayUri="/r2/dit/producer/WSRPPortletManagementService_v22" sslADGroupMembership="CN=PortalServices_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+  <Service name="PORTAL2_GTWY_WSP" gatewayUri="/r2/dit/producer/WSRPBaseService_v22" sslADGroupMembership="CN=PortalServices_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+
+
+  <!--PR -->
+	<Service name="PR_GTWY_WSP" gatewayUri="/services/Provider/ProviderRegistryService" sslADGroupMembership="" returnOriginalFault="false" version="1" />
+  <Service name="PR_GTWY_WSP" gatewayUri="/services/Provider/ProviderRegistryService/V04" sslADGroupMembership="" returnOriginalFault="false" version="1" />
+	<!--PR_AD -->
+	<Service name="PR_AD_GTWY_WSP" gatewayUri="/services/Provider/ProviderRegistryService" sslADGroupMembership="CN=ProviderRegistry_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<Service name="PR_AD_GTWY_WSP" gatewayUri="/services/Provider/ProviderRegistryService/V04" sslADGroupMembership="CN=ProviderRegistry_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<!--SUBSCRIPTION -->
+	<Service name="SUB_AD_GTWY_WSP" gatewayUri="/P/V3-20110601L/XML/COMT_AR990001ON" sslADGroupMembership="CN=CR_PR_Pub_Sub_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<!--UR -->
+	<Service name="UR_STS_AD_GTWY_WSP" gatewayUri="/services/UR/STS" sslADGroupMembership="CN=UserRegistry_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<Service name="UR_AD_GTWY_WSP" gatewayUri="/services/UR/PDP" sslADGroupMembership="CN=UserRegistry_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<!--TEST -->
+	<Service name="AD_XFW" gatewayUri="/services/Medication/DPV/RecipientInquiry" sslADGroupMembership="CN=ODBq_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<!--PubSub_Subscriber_WSP -->
+	<Service name="PubSub_Subscriber_WSP" gatewayUri="/ExtendedDataManager/Service" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<Service name="PubSub_Subscriber_WSP" gatewayUri="/NotificationProducerService/V01" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<!--CONSENT -->
+	<Service name="CONSENT_GTWY_WSP" gatewayUri="/ConsentRegistryService/V01" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	
+	<!-- XDS Repository -->
+	<Service name="REPOSITORY_GTWY_WSP" gatewayUri="/DocumentRepositoryService/V01" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<Service name="REPOSITORY_EXT_GTWY_WSP" gatewayUri="/DocumentRepositoryService/V01" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<Service name="REPOSITORY_EXT_BORN_GTWY_WSP" gatewayUri="/BORN/DocumentRepositoryService/V01" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<!-- XDS Registry -->
+	<Service name="REGISTRY_GTWY_WSP" gatewayUri="/DocumentRegistryService/V01" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+	<Service name="REGISTRY_EXT_GTWY_WSP" gatewayUri="/DocumentRegistryService/V01" sslADGroupMembership="" returnOriginalFault="true" version="1" />
+
+        <!--  Service PIX v3 configuration record -->
+        <Service name="PIX_PDQ_V3_GTWY_WSP" gatewayUri="/PIXManagerService/V01" sslADGroupMembership="" returnOriginalFault="true" version="1"/> 
+  
+        <!--  Service PDQ v3 configuration record -->
+        <Service name="PIX_PDQ_V3_GTWY_WSP" gatewayUri="/PDSupplierService/V01" sslADGroupMembership="" returnOriginalFault="true" version="1"/> 
+
+        <!--  Service PIX v2 configuration record -->
+        <Service name="PIX_PDQ_V2_GTWY_WSP" gatewayUri="/PDSupplierPIXv2Service/V01" sslADGroupMembership="" returnOriginalFault="true" version="1"/> 
+  
+        <!--  Service PDQ v2 configuration record -->
+        <Service name="PIX_PDQ_V2_GTWY_WSP" gatewayUri="/PDSupplierService/V01" sslADGroupMembership="" returnOriginalFault="true" version="1"/> 
+	
+	<!-- HIAL Mock Services -->
+	<Service name="DPV_MOCK_SERVICE" gatewayUri="/dpv/recipientInquiry" sslADGroupMembership="CN=ODBq_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" returnOriginalFault="true" version="1" />
+	<Service name="AAA_TEST_MOCK_SERVICE" gatewayUri="/AAAPolicyTest/" sslADGroupMembership="CN=ODBq_AccessControl,OU=OIM Groups,OU=Subscribers,DC=subscribers,DC=ssh" />
+
+</Profile>

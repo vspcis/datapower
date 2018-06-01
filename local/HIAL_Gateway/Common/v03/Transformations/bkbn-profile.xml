@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile profileDate="March-21-2012" profileVersion="1" applicationOID="2.16" systemName="Prov">
+	<!--CDMS_DATA_PUBLISH_BKBN_WSP -->
+	<Service name="CDMS_DATA_PUBLISH_BKBN_WSP" backboneUri="/backbone/CDMS/DataPublish" auditBlocking="false" version="1">
+		<Operation name="AcceptReports" description="Accept Reports" operationType="INTERACTIVE">
+			<Input wsaAction="http://www.ehealthontario.ca/OLIS/CDMS/AcceptReports" map="" />
+			<Output wsaAction="http://www.ehealthontario.ca/OLIS/CDMS/AcceptReports" map="" />
+		</Operation>
+	</Service>
+	<!--OLIS_DATA_PUBLISH_BKBN_WSP3.2 -->
+	<Service name="OLIS_DATA_PUBLISH_BKBN_WSP" backboneUri="/backbone/OLIS/DataBroker/LabReportsPublication/V03" auditBlocking="false" version="1">
+		<Operation name="AcceptReports" description="Accept Reports" operationType="INTERACTIVE">
+			<Input wsaAction="http://www.ehealthontario.ca/OLIS/DataBroker/LabReportsPublication/AcceptReports/V03" map="" />
+			<Output wsaAction="http://www.ehealthontario.ca/OLIS/DataBroker/LabReportsPublication/AcceptReports/V03" map="" />
+		</Operation>
+	</Service>
+	<!--CR_BKBN_WSP -->
+	<Service name="CR_BKBN_WSP" backboneUri="/backbone/Client/ClientRegistryService" auditBlocking="false" version="1">
+		<Operation name="GetClientSummary" description="Get Client Summary" operationType="INTERACTIVE">
+			<Input wsaAction="GetClientSummary" map="local:///eHO/v03/Transformations/client-request-summary.xsl" />
+			<Output wsaAction="GetClientSummary" map="local:///eHO/v03/Transformations/client-response-summary.xsl" />
+		</Operation>
+		<Operation name="GetClientDetail" description="Get Client Detail" operationType="INTERACTIVE">
+			<Input wsaAction="GetClientDetail" map="local:///eHO/v03/Transformations/client-request-details.xsl" />
+			<Output wsaAction="GetClientDetail" map="local:///eHO/v03/Transformations/client-response-details.xsl" />
+		</Operation>
+	</Service>
+	<!--CRUR_BKBN_WSP -->
+	<Service name="CRUR_BKBN_WSP" backboneUri="/backbone/DIT/CRRegistry/EHealthCRService" auditBlocking="false" version="1" />
+	<!--HNS_BKBN_WSP -->
+	<Service name="HNS_BKBN_WSP" backboneUri="/backbone/Medication/DPV/RecipientInquiry" auditBlocking="false" version="1">
+		<Operation name="BTSDPVHial_RecipientInquiry_ODPVSoap" description="Recipient Inquiry" operationType="INTERACTIVE">
+			<Input wsaAction="http://tempuri.org/BTSDPVHial_RecipientInquiry_ODPV/RecipientRequest" map="local:/DPV/v03/Transformations/dpv-ri-request.xsl" />
+			<Output wsaAction="http://tempuri.org/BTSDPVHial_RecipientInquiry_ODPV/RecipientRequest" map="local:/DPV/v03/Transformations/dpv-ri-response.xsl" />
+		</Operation>
+	</Service>
+	<Service name="HNS_BKBN_WSP" backboneUri="/backbone/Medication/DPV/DrugHistorySummary" auditBlocking="false" version="1">
+		<Operation name="DrugHistorySummaryRequest" description="Drug History Summary Search" operationType="INTERACTIVE">
+			<Input wsaAction="http://ODPV/ODPVHial_DHSIRequest_ODPV/DrugHistorySummaryRequest" map="local:/DPV/v03/Transformations/dpv-dhs-request.xsl" />
+			<Output wsaAction="http://ODPV/ODPVHial_DHSIRequest_ODPV/DrugHistorySummaryRequest" map="local:/DPV/v03/Transformations/dpv-dhs-response.xsl" />
+		</Operation>
+	</Service>
+	<Service name="HNS_BKBN_WSP" backboneUri="/backbone/Medication/DPV/DrugHistoryDetails" auditBlocking="false" version="1">
+		<Operation name="DrugHistoryDetailRequest" description="Drug History Detail Search" operationType="INTERACTIVE">
+			<Input wsaAction="http://ODPV/ODPVHial_DHDIRequest_ODPV/DrugHistoryDetailRequest" map="local:/DPV/v03/Transformations/dpv-dhd-request.xsl" />
+			<Output wsaAction="http://ODPV/ODPVHial_DHDIRequest_ODPV/DrugHistoryDetailRequest" map="local:/DPV/v03/Transformations/dpv-dhd-response.xsl" />
+		</Operation>
+	</Service>
+	<!--NOTIFICATION_BKBN_WSP -->
+	<Service name="NOTIFICATION_BKBN_WSP" backboneUri="/P/20110601L/XML/BroadcastService" auditBlocking="false" version="1" />
+	<!--OLIS_BKBN_WSP -->
+	<Service name="OLIS_BKBN_WSP" backboneUri="/backbone/Laboratory/OLIS" auditBlocking="false" version="1" />
+	<!--OLIS_LAB_BKBN_WSP -->
+	<Service name="OLIS_LAB_BKBN_WSP" backboneUri="/backbone/Laboratory/COIL" auditBlocking="false" version="1" />
+	<!--OLIS_SUB_BKBN_WSP -->
+	<Service name="OLIS_SUB_BKBN_WSP" backboneUri="/backbone/Laboratory/OLIS/SubscriptionService" auditBlocking="false" version="1" />
+	<!--OLIS_SUB_BKBN_WSP3.2 -->
+	<Service name="OLIS_SUB_BKBN_WSP" backboneUri="/OLIS/DataBroker/LabReportsSubscription/V03" auditBlocking="false" version="1" />
+	<!--PcCR_BKBN_WSP -->
+	<Service name="PcCR_BKBN_WSP" backboneUri="/P/V3-MR200903/XML/PRPA_AR101102CA" auditBlocking="false" version="1">
+		<Operation name="{urn:hl7-org:v3}PRPA_IN101101CA_I" description="Get Client Demographics Request" operationType="INTERACTIVE">
+			<Input wsaAction="urn:hl7-org:v3:PRPA_IN101101CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101101CA.xslt" />
+			<Output wsaAction="urn:hl7-org:v3:PRPA_IN101102CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101102CA.xslt" />
+		</Operation>
+		<Operation name="{urn:hl7-org:v3}PRPA_IN101103CA_I" description="Find Candidates Query Request" operationType="INTERACTIVE">
+			<Input wsaAction="urn:hl7-org:v3:PRPA_IN101103CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101103CA.xslt" />
+			<Output wsaAction="urn:hl7-org:v3:PRPA_IN101104CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101104CA.xslt" />
+		</Operation>
+		<Operation name="{urn:hl7-org:v3}PRPA_IN101105CA_I" description="Find Associated Client Identifiers Request" operationType="INTERACTIVE">
+			<Input wsaAction="urn:hl7-org:v3:PRPA_IN101105CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101105CA.xslt" />
+			<Output wsaAction="urn:hl7-org:v3:PRPA_IN101106CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101106CA.xslt" />
+		</Operation>
+	</Service>
+	<Service name="PcCR_BKBN_WSP" backboneUri="/P/V3-MR200903/XML/PRPA_AR101202CA" auditBlocking="false" version="1">
+		<Operation name="{urn:hl7-org:v3}PRPA_IN101201CA_I" description="Add Client Request" operationType="INTERACTIVE">
+			<Input wsaAction="urn:hl7-org:v3:PRPA_IN101201CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101201CA.xslt" />
+			<Output wsaAction="urn:hl7-org:v3:PRPA_IN101201CA-Response.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101201CA-Response.xslt" />
+		</Operation>
+		<Operation name="{urn:hl7-org:v3}PRPA_IN101204CA_I" description="Revise Client Request" operationType="INTERACTIVE">
+			<Input wsaAction="urn:hl7-org:v3:PRPA_IN101204CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101204CA.xslt" />
+			<Output wsaAction="urn:hl7-org:v3:PRPA_IN101204CA-Response.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101204CA-Response.xslt" />
+		</Operation>
+	</Service>
+	<Service name="PcCR_BKBN_WSP" backboneUri="/P/V3-MR200903/XML/PRPA_AR101002CA" auditBlocking="false" version="1">
+		<Operation name="{urn:hl7-org:v3}PRPA_IN101001CA_I" description="Add client notification" operationType="INTERACTIVE">
+			<Input wsaAction="urn:hl7-org:v3:PRPA_IN101001CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101001CA.xslt" />
+			<Output wsaAction="urn:hl7-org:v3:MCCI_IN000002CA.MR200903" map="local:///PcCR/v03/Transformations/MCCI_IN000002CA.xslt" />
+		</Operation>
+		<Operation name="{urn:hl7-org:v3}PRPA_IN101002CA_I" description="Revise Client Notification" operationType="INTERACTIVE">
+			<Input wsaAction="urn:hl7-org:v3:PRPA_IN101002CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101002CA.xslt" />
+			<Output wsaAction="urn:hl7-org:v3:MCCI_IN000002CA.MR200903" map="local:///PcCR/v03/Transformations/MCCI_IN000002CA.xslt" />
+		</Operation>
+		<Operation name="{urn:hl7-org:v3}PRPA_IN101004CA_I" description="Resolve duplicates Notification" operationType="INTERACTIVE">
+			<Input wsaAction="urn:hl7-org:v3:PRPA_IN101004CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101004CA.xslt" />
+			<Output wsaAction="urn:hl7-org:v3:MCCI_IN000002CA.MR200903" map="local:///PcCR/v03/Transformations/MCCI_IN000002CA.xslt" />
+		</Operation>
+		<Operation name="{urn:hl7-org:v3}PRPA_IN101999CA_I" description="Delete Notification" operationType="INTERACTIVE">
+			<Input wsaAction="urn:hl7-org:v3:PRPA_IN101999CA.MR200903" map="local:///PcCR/v03/Transformations/PRPA_IN101999CA.xslt" />
+			<Output wsaAction="urn:hl7-org:v3:MCCI_IN000002CA.MR200903" map="local:///PcCR/v03/Transformations/MCCI_IN000002CA.xslt" />
+		</Operation>
+	</Service>
+	<!--PORTAL_BKBN_WSP -->
+	<Service name="PORTAL_BKBN_WSP" backboneUri="/producer/WSRPPortletManagementService_v2" auditBlocking="false" version="1" />
+	<Service name="PORTAL_BKBN_WSP" backboneUri="/producer/WSRPBaseService_v2" auditBlocking="false" version="1" />
+	<Service name="PORTAL_BKBN_WSP" backboneUri="/producer/WSRPServiceDescriptionService_v2" auditBlocking="false" version="1" />
+
+  <!--PORTAL2_BKBN_WSP -->
+  <Service name="PORTAL2_BKBN_WSP" backboneUri="/producer/WSRPPortletManagementService_v22" auditBlocking="false" version="1" />
+  <Service name="PORTAL2_BKBN_WSP" backboneUri="/producer/WSRPBaseService_v22" auditBlocking="false" version="1" />
+  <Service name="PORTAL2_BKBN_WSP" backboneUri="/producer/WSRPServiceDescriptionService_v22" auditBlocking="false" version="1" />
+    
+	<!--PR_BKBN_WSP -->
+	<Service name="PR_BKBN_WSP" backboneUri="/backbone/Provider/ProviderRegistryService" auditBlocking="false" version="1">
+		<Operation name="SearchForProviderPerson" description="Search For Provider Person" operationType="INTERACTIVE">
+			<Input wsaAction="SearchForProviderPerson" map="local:///eHO/v03/Transformations/provider-person-request-search.xsl" />
+			<Output wsaAction="SearchForProviderPerson" map="local:///eHO/v03/Transformations/provider-person-response-search.xsl" />
+		</Operation>
+		<Operation name="GetProviderPersonDetail" description="Get Provider Person Detail" operationType="INTERACTIVE">
+			<Input wsaAction="GetProviderPersonDetail" map="local:///eHO/v03/Transformations/provider-person-request-details.xsl" />
+			<Output wsaAction="GetProviderPersonDetail" map="local:///eHO/v03/Transformations/provider-person-response-details.xsl" />
+		</Operation>
+		<Operation name="SearchForProviderOrganization" description="Search For Provider Organization" operationType="INTERACTIVE">
+			<Input wsaAction="SearchForProviderOrganization" map="local:///eHO/v03/Transformations/provider-organization-request-search.xsl" />
+			<Output wsaAction="SearchForProviderOrganization" map="local:///eHO/v03/Transformations/provider-organization-response-search.xsl" />
+		</Operation>
+		<Operation name="GetProviderOrganizationDetail" description="Get Provider Person Detail" operationType="INTERACTIVE">
+			<Input wsaAction="GetProviderOrganizationDetail" map="local:///eHO/v03/Transformations/provider-organization-request-details.xsl" />
+			<Output wsaAction="GetProviderOrganizationDetail" map="local:///eHO/v03/Transformations/provider-organization-response-details.xsl" />
+		</Operation>
+	</Service>
+	<Service name="PR_BKBN_WSP" backboneUri="/backbone/Provider/ProviderRegistryService/V04" auditBlocking="false" version="1">
+		<Operation name="SearchForProviderPerson" description="Search For Provider Person" operationType="INTERACTIVE">
+			<Input wsaAction="SearchForProviderPerson" map="local:///eHO/v04/Transformations/provider-person-request-search.xsl" />
+			<Output wsaAction="SearchForProviderPerson" map="local:///eHO/v04/Transformations/provider-person-response-search.xsl" />
+		</Operation>
+		<Operation name="GetProviderPersonDetail" description="Get Provider Person Detail" operationType="INTERACTIVE">
+			<Input wsaAction="GetProviderPersonDetail" map="local:///eHO/v04/Transformations/provider-person-request-details.xsl" />
+			<Output wsaAction="GetProviderPersonDetail" map="local:///eHO/v04/Transformations/provider-person-response-details.xsl" />
+		</Operation>
+		<Operation name="SearchForProviderOrganization" description="Search For Provider Organization" operationType="INTERACTIVE">
+			<Input wsaAction="SearchForProviderOrganization" map="local:///eHO/v04/Transformations/provider-organization-request-search.xsl" />
+			<Output wsaAction="SearchForProviderOrganization" map="local:///eHO/v04/Transformations/provider-organization-response-search.xsl" />
+		</Operation>
+		<Operation name="GetProviderOrganizationDetail" description="Get Provider Person Detail" operationType="INTERACTIVE">
+			<Input wsaAction="GetProviderOrganizationDetail" map="local:///eHO/v04/Transformations/provider-organization-request-details.xsl" />
+			<Output wsaAction="GetProviderOrganizationDetail" map="local:///eHO/v04/Transformations/provider-organization-response-details.xsl" />
+		</Operation>
+	</Service>
+	<!--PRUR_BKBN_WSP -->
+	<Service name="PRUR_BKBN_WSP" backboneUri="/backbone/PRRegistry/EHealthPRService" auditBlocking="pass-through" version="1" />
+	<Service name="PRUR_BKBN_WSP" backboneUri="/backbone/PRRegistry/EHealthPRService/V04" auditBlocking="pass-through" version="1" />
+	<!--SUB_BKBN_WSP -->
+	<Service name="SUB_BKBN_WSP" backboneUri="/P/V3-20110601L/XML/COMT_AR990001ON" auditBlocking="false" version="1" />
+	<!--UR_BKBN_WSP -->
+	<Service name="UR_BKBN_WSP" backboneUri="/backbone/UR/STS" auditBlocking="pass-through" version="1" />
+	<Service name="UR_BKBN_WSP" backboneUri="/backbone/UR/PDP" auditBlocking="pass-through" version="1" />
+
+ <!--UR5.0_BKBN_WSP -->
+  <Service name="UR5.0_BKBN_WSP" backboneUri="/backbone/UR5/STS" auditBlocking="pass-through" version="1" />
+  <Service name="UR5.0_BKBN_WSP" backboneUri="/backbone/UR5/PDP" auditBlocking="pass-through" version="1" />
+  
+	<!--EMPI_BKBN_WSP -->
+	<Service name="EMPI_BKBN_WSP" backboneUri="/initiatews/services/IdentityHub" auditBlocking="pass-through" version="1" />
+ 
+	<!-- EMPI PUB/SUB Subscription & Extended DataManager -->
+	<Service name="PubSub_Subscriber_WSP" backboneUri="/ExtendedDataManager/Service" auditBlocking="false" version="1" />
+	<Service name="PubSub_Subscriber_WSP" backboneUri="/NotificationProducerService/V01" auditBlocking="false" version="1" />
+	<Service name="PubSub_Subscriber_WSP" backboneUri="/PausableSubscriptionManagerService/V01" auditBlocking="false" version="1" />
+	<!-- EMPI PUB/SUB Notification Consumer Service -->
+	<Service name="NOTIFICATION_CONSUMER_BKBN_WSP" backboneUri="/NotificationConsumerService/V01" auditBlocking="false" version="1" />
+	<!--CONSENT_BKBN_WSP -->
+	<Service name="CONSENT_BKBN_WSP" backboneUri="/ConsentRegistryService/V01" auditBlocking="pass-through" version="1" />
+	
+	<!-- XDS WebServiceProxy with 2 WSDL -->
+	<Service name="REGISTRY_BKBN_WSP"   backboneUri="/DocumentRegistryService/V01" auditBlocking="pass-through" version="1" />
+	<Service name="REPOSITORY_BKBN_WSP" backboneUri="/DocumentRepositoryService/V01" auditBlocking="pass-through" version="1" />
+  
+	<!-- BORN WebServiceProxy -->
+	<Service name="REPOSITORY_BORN_BKBN_WSP" backboneUri="/BORN/DocumentRepositoryService/V01" auditBlocking="pass-through" version="1" />
+      
+      <!--  Service PIX v3 configuration record -->
+      <Service name="PIX_PDQ_V3_BKBN_WSP" backboneUri="/PIXManagerService/V01" auditBlocking="false" version="1">
+        <Operation name="{urn:hl7-org:v3}PIXManager_PRPA_IN201309UV02" description="PIX v3 Query" operationType="INTERACTIVE">
+          <Input  wsaAction="urn:hl7-org:v3:PRPA_IN201309UV02" map="local:///PixPdqV3/v03/Transformations/PIXv3RequestMapper.xsl" />
+          <Output wsaAction="urn:hl7-org:v3:PRPA_IN201310UV02" map="local:///PixPdqV3/v03/Transformations/PIXv3ResponseMapper.xsl" />
+        </Operation>
+      </Service>
+
+      <!--  Service PDQ v3 configuration record -->
+      <Service name="PIX_PDQ_V3_BKBN_WSP" backboneUri="/PDSupplierService/V01" auditBlocking="false" version="1">
+        <Operation name="{urn:hl7-org:v3}PDSupplier_PRPA_IN201305UV02" description="PDQ v3 Query" operationType="INTERACTIVE">
+          <Input  wsaAction="urn:hl7-org:v3:PRPA_IN201305UV02" map="local:///PixPdqV3/v03/Transformations/PDQv3RequestMapper_PRPA_IN201305UV02.xsl" />
+          <Output wsaAction="urn:hl7-org:v3:PRPA_IN201306UV02" map="local:///PixPdqV3/v03/Transformations/PDQv3ResponseMapper_PRPA_IN201306UV02.xsl" />
+        </Operation>
+      </Service>
+
+      <!--  Service PIX v2 configuration record -->
+      <Service name="PIX_PDQ_V2_BKBN_WSP" backboneUri="/PDSupplierPIXv2Service/V01" auditBlocking="false" version="1">
+        <Operation name="{urn:hl7-org:v2xml}PIXManager_PIXv2_QBP_Q21" description="PIX v2 Query" operationType="INTERACTIVE">
+          <Input  wsaAction="ITI-9" map="local:///PixPdqV2/v03/Transformations/PIXv2RequestMapper.xsl" />
+          <Output wsaAction="ITI-9-Response" map="local:///PixPdqV2/v03/Transformations/PIXv2ResponseMapper.xsl" />
+        </Operation>
+      </Service>
+
+      <!--  Service PDQ v2 configuration record -->
+      <Service name="PIX_PDQ_V2_BKBN_WSP" backboneUri="/PDSupplierService/V01" auditBlocking="false" version="1">
+        <Operation name="{urn:hl7-org:v2xml}PDSupplier_PDQv2_QBP_Q21" description="PDQ v2 Query" operationType="INTERACTIVE">
+          <Input  wsaAction="ITI-21" map="local:///PixPdqV2/v03/Transformations/PDQv2RequestMapper.xsl" />
+          <Output wsaAction="ITI-21-Response" map="local:///PixPdqV2/v03/Transformations/PDQv2ResponseMapper.xsl" />
+        </Operation>
+      </Service>
+  
+    <!-- pcCDR WebServiceProxy with 2 WSDL -->
+    <Service name="REGISTRY_PCCDR_BKBN_WSP"   backboneUri="/pcCDR/DocumentRegistryService/V01" auditBlocking="pass-through" version="1" />
+    <Service name="REPOSITORY_PCCDR_BKBN_WSP" backboneUri="/pcCDR/DocumentRepositoryService/V01" auditBlocking="pass-through" version="1" />
+  
+</Profile>

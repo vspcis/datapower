@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DPCacheConfiguration>
+  <ServiceURL>https://172.17.0.2:5550/service/mgmt/current</ServiceURL>
+  <Username>admin</Username>
+  <Password>FXcDNMDDCWUu4zK6lMl/CsoTbnu90zoVUEu9o7wFhG64a1Ez2CO6/C0rktb1nMtIuXPHwl4I3/42iDTLG29mDUvrdFypwVt8qnXW0w+lAOgdJ5N6Esy+RprvpknbCe0l1AMkMB3u3W+Qp+ofOcUQTY/2ItB22sze4aV1R5hLfML2CYF0NcRoG2Z8BklcMx58MqsF+7tUnXuhtR6Eyb9O2Yfb2j9xZGbuaknknMAxchzPvL7/Ibt4V4VfZqSlniU1vW/RM51yaBzCFSAosyFpZXuto8nzpZ/ekdWfPUZz7Ed7dmmRtw43WbZhRCftJBSMDPa3WPMGabixyfCKJrlR1Q==</Password>
+  <Key>wsgateway.key</Key>
+  <SSLProxy>CacheInitialization_MPG-ssl</SSLProxy>
+  <DocumentCache>ServiceXMLManager</DocumentCache>
+  <ResourceMap>_dsk/WSRRCache</ResourceMap>
+  <retry>3</retry>
+  <timeout>5</timeout>
+</DPCacheConfiguration>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy wsrr:policyClass="WSME1_7PolicyClass" wsrr:policyClassDomain="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" Name="urn:FMBLGatewayError_Y_19ac4b00-3b25-11e7-b585-eb3826b93faf_6cf8abde-2d90-4bb9-8d68-b21b90dc284c" wsrr:__displayName="FMBLGatewayError_Y" xmlns:wsme="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" xmlns:wsrr="http://www.ibm.com/xmlns/prod/serviceregistry/6/2/wspolicy" xmlns:wsp="http://www.w3.org/ns/ws-policy">
+	<wsme:Rule>
+		<wsme:Action IfCondition="true">
+			<wsme:ExecuteXSL>
+				<wsme:Parameter Name="EnforceFlag" Value="true"/>
+				<wsme:Parameter Name="TransientDataMap" Value="IdentityHub_TransientDataMap_FMBL"/>
+				<wsme:Stylesheet>local:///Framework/ProcessingFlow/FullMessageBodyLogging.xsl</wsme:Stylesheet>
+			</wsme:ExecuteXSL>
+		</wsme:Action>
+	</wsme:Rule>
+</wsp:Policy>

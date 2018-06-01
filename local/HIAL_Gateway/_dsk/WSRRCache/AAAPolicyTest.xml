@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wsdl><Name>AAAPolicyTest.wsdl</Name><Operations><Operation><Name>AAAPolicyTest</Name><Policies/></Operation><Operation><Name>DocumentRegistry_RegistryStoredQuery</Name><Policies/></Operation><Operation><Name>AAAPolicyTest</Name><Policies/></Operation><Operation><Name/><Policies/></Operation><Operation><Name>DocumentRegistry_RegistryStoredQuery</Name><Policies/></Operation><Operation><Name/><Policies/></Operation></Operations></Wsdl>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SLAGroups>
+    <Service name="ProviderRegistryService">
+        <SLAGroup name="DTEExternalSystems">
+            <CN>DTE.MLLPROXY1</CN>
+            <CN>BLUEWATER1.NODE</CN>
+        </SLAGroup>
+    </Service>
+    <Service name="PIXManagerV2_V01">
+        <SLAGroup name="Othersystems">
+            <CN>BLUEWATER2.NODE</CN>
+        </SLAGroup>
+    </Service>
+</SLAGroups>

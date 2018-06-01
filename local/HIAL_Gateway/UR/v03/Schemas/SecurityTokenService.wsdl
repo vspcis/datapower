@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+    Extension to WS-Trust WSDL that defines an end-point (Service).
+    This WSDL imports WS-Trust, defines a 'binding', and a 'service' with a 'port'.
+-->
+<definitions name="SecurityTokenService"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512/"
+             xmlns:tns="http://sts.ur.idm.ehealth.gov.on.ca/"
+             targetNamespace="http://sts.ur.idm.ehealth.gov.on.ca/"
+             xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+    <types>
+        <xsd:schema
+                xmlns:tns="http://sts.ur.idm.ehealth.gov.on.ca/"
+                targetNamespace="http://sts.ur.idm.ehealth.gov.on.ca/"
+                elementFormDefault="qualified">
+
+            <xsd:import
+                    namespace="http://docs.oasis-open.org/ws-sx/ws-trust/200512/"
+                    schemaLocation="ws-trust-1.3.xsd"/>
+
+            <xsd:import
+                    namespace="http://fault.sts.ur.idm.ehealth.gov.on.ca/"
+                    schemaLocation="FaultToken.xsd"/>
+
+        </xsd:schema>
+    </types>
+
+    <message name="RequestSecurityTokenMsg">
+        <part name="request" element="wst:RequestSecurityToken"/>
+    </message>
+
+    <message name="RequestSecurityTokenResponseMsg">
+        <part name="response" element="wst:RequestSecurityTokenResponse"/>
+    </message>
+
+    <portType name="SecurityTokenService">
+        <operation name="RequestSecurityToken">
+            <input message="tns:RequestSecurityTokenMsg"/>
+            <output message="tns:RequestSecurityTokenResponseMsg"/>
+        </operation>
+    </portType>
+
+    <binding name="SecurityTokenServiceBinding" type="tns:SecurityTokenService">
+
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+
+        <operation name="RequestSecurityToken">
+            <soap:operation soapAction="RequestSecurityToken" style="document"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name="SecurityTokenService">
+        <port name="SecurityTokenServicePort" binding="tns:SecurityTokenServiceBinding">
+            <soap:address location="REPLACE_WITH_ACTUAL_URL"/>
+        </port>
+    </service>
+
+</definitions>

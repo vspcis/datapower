@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy wsrr:policyClass="WSME1_7PolicyClass" wsrr:policyClassDomain="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" Name="urn:AAAGateway_AD_SAML_82955a40-2faa-11e5-8ba8-9bc9a2e6483e_fc2c4b5c-7c50-4690-8987-644d152e038d" wsrr:__displayName="AAAGateway_AD_SAML" xmlns:wsme="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" xmlns:wsrr="http://www.ibm.com/xmlns/prod/serviceregistry/6/2/wspolicy" xmlns:wsp="http://www.w3.org/ns/ws-policy">
+	<wsme:Rule>
+		<wsme:Action IfCondition="true">
+			<wsme:ExecuteXSL>
+				<wsme:Parameter Name="AAA_Policy_Pattern" Value="AD_SAML_AAA"/>
+				<wsme:Stylesheet>local:///Framework/ProcessingFlow/AAAGateway.xsl</wsme:Stylesheet>
+			</wsme:ExecuteXSL>
+		</wsme:Action>
+	</wsme:Rule>
+</wsp:Policy>

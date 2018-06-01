@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+    
+    <CachePath>local:///_dsk/WSRRCache/</CachePath>
+    
+    <WSRRConfiguration>
+        <ServiceURL>http://HIAL_GATEWAY:8009</ServiceURL>
+        <Retry>3</Retry>
+        <Timeout>60</Timeout>
+        <ServiceURLMap>
+            <ResourceURL resourceType="serviceEndPoint">/WSRR/8.5/Metadata/XML/Query/</ResourceURL>
+            <ResourceURL resourceType="wsdlMetaData">/WSRR/8.5/Metadata/XML/</ResourceURL>
+        </ServiceURLMap>
+    </WSRRConfiguration>
+    
+    <FMBL>
+        <DPMQ>HIAL.FMBL.QueueManagerQroup</DPMQ>
+        <QueueName>QL.HIAL.ON.FMBL.IN</QueueName>
+    </FMBL>
+    
+    <!--FMBL>
+        <DPMQ>HIAL.FMBL.QueueManager</DPMQ>
+        <QueueName>HIAL.FMBL.QL</QueueName>
+    </FMBL-->
+    
+    <AntiVirus>
+        <icaphost>10.69.0.85</icaphost>
+        <icapport>1344</icapport>
+        <icapuri>/interscan</icapuri>
+        <icaptimeout>15</icaptimeout>
+        <icaptype>trend</icaptype>
+        <avprocessingmode>attachments</avprocessingmode>
+    </AntiVirus>
+    
+</Config>

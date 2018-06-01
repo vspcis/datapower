@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+  <ldap>
+    <load-balancer>SUBSCRIBERS_AD_GRP</load-balancer>
+    <bind-dn>CN=IF Service,CN=Users,DC=subscribers,DC=ssh</bind-dn>
+    <bind-password>D6Pig/yssd2VHjPrk/oBgdrmLO7nRuYU8MuRwM53t4BxDlUyUHNGcuRoU0LUpu+CGIBn8fss4mvpBuCFB/cEbv1UD0XL3l+Bdr1eUwUYjPej6mXOqdBtWh+Q3XUiT5wyYJq6OCqoyJ0/SGv1vbrNDHOiPRZnvCdRiRtf66MM2JE=</bind-password>
+    <decryption-key-name>wsgateway1.sit.ehealthontario.ca.key</decryption-key-name>
+  </ldap>
+  <ur>
+    <sts-url>http://172.17.0.2:10100/backbone/UR5/STS</sts-url>
+    <pdp-url>http://172.17.0.2:10100/backbone/UR5/PDP</pdp-url>
+  </ur>
+  <saml>
+    <skew-time>5</skew-time>
+  </saml>
+  <timeout>
+    <sts>120</sts>
+    <pdp>120</pdp>
+  </timeout>
+</parameters>

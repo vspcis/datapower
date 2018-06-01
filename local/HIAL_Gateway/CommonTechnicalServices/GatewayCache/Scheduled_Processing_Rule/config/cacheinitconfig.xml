@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CacheInitConfiguration>
+    <ServiceURL>http://172.17.0.2:8009</ServiceURL>
+    <retry>3</retry>
+    <timeout>60</timeout>
+</CacheInitConfiguration>

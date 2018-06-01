@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WSRRConfiguration>
+  <!--ServiceURL>http://10.69.0.32:2082</ServiceURL-->
+  <!--<ServiceURL>http://10.69.0.32:2099</ServiceURL>-->
+  <ServiceURL>http://10.69.5.165:9080</ServiceURL>
+  <Username>wasadmin</Username>
+  <!--Username>InvalidUser</Username-->
+  <Password>ZbkQBWFgFTNoZFkMEDOJFrfj/14a3bce3sx3AZ4Ltj/Mu5LsgYpjSSnuLLl5DmktF7ZrKtoqMusdfi2nLXixn2EchbKJTGtY9k3+AqARRSDFNw6091ZOFwP6t8D98pW+3peoHPVTWxJAvlfbMi0a51ghaFwx3yPwh1hscO+M4WzdQ/LSkAHis1yb1cbxOSkDijBOFxtcWetxhMzSquVmrt/skO1G9mgRuMrc8bJlmCPqRNVVEKvZXCc9Xj7sW9DGBVi+QUFpVHUU2ki3YsNUoe8s5dalLcTCQTkJ1zdUXEbD7rlqZBs1y7l82xUsHw1wZC3hYEcFlgl0KPYxYDsb2A==</Password>
+  <Key>wsgateway.key</Key>
+  <retry>3</retry>
+  <!--<SSLProxy>CacheInitialization_MPG-ssl</SSLProxy>-->
+  <SSLProxy></SSLProxy>
+  <timeout>60</timeout>
+  <ServiceURLMap>
+    <ResourceURL resourceType="SLAList">/WSRR/8.5/Metadata/XML/Query/SLASearch</ResourceURL>
+    <ResourceURL resourceType="GTW_PolicySearch" >/WSRR/8.5/Metadata/XML/Query/GTW-PolicySearch</ResourceURL>
+    <ResourceURL resourceType="GroupIDMap" >/WSRR/8.5/Metadata/XML/Query/getGroupIDMaps</ResourceURL>
+    <ResourceURL resourceType="FMBLMaps">/WSRR/8.5/Metadata/XML/Query/TDMapSearch</ResourceURL>
+    <ResourceURL resourceType="SLAAttachment" parametertype="querystring" parametername="bsrURI" >/WSRR/8.5/PolicyService/SLAAttachment</ResourceURL>
+    <ResourceURL resourceType="GenericContent" parametertype="resource" >/WSRR/8.5/Content</ResourceURL>
+    <ResourceURL resourceType="GenericContentFMBL" parametertype="resource" >/WSRR/8.5/Content</ResourceURL>
+    <ResourceURL resourceType="GenericContentGroupIDMap" parametertype="resource" >/WSRR/8.5/Content</ResourceURL>
+    <ResourceURL resourceType="GenericContentPolicy" parametertype="resource" >/WSRR/8.5/Content</ResourceURL>
+    <ResourceURL resourceType="WSDLList" >/WSRR/8.5/Metadata/XML/Query/getOnlineWSDL</ResourceURL>
+    <ResourceURL resourceType="WSDLAttachment" parametertype="querystring" parametername="bsrURI">/WSRR/8.5/PolicyService/WSDL</ResourceURL>
+    <ResourceURL resourceType="PolicyAttachmentContent" parametertype="resource" >/WSRR/8.5/Content</ResourceURL>
+    <ResourceURL resourceType="WSDLMetadata" parametertype="resource" >/WSRR/8.5/Metadata/XML</ResourceURL>
+    <ResourceURL resourceType="WSDLData" parametertype="resourceproperties" >/WSRR/8.5/Metadata/XML</ResourceURL>
+  </ServiceURLMap>
+</WSRRConfiguration>

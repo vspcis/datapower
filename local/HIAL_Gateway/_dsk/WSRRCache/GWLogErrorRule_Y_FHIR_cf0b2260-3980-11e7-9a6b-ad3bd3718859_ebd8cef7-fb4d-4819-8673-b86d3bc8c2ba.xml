@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy wsrr:policyClass="WSME1_7PolicyClass" wsrr:policyClassDomain="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" Name="urn:GWLogErrorRule_Y_FHIR_cf0b2260-3980-11e7-9a6b-ad3bd3718859_ebd8cef7-fb4d-4819-8673-b86d3bc8c2ba" wsrr:__displayName="GWLogErrorRule_Y_FHIR" xmlns:wsme="http://www.ibm.com/xmlns/stdwip/2012/08/ws-mediation" xmlns:wsrr="http://www.ibm.com/xmlns/prod/serviceregistry/6/2/wspolicy" xmlns:wsp="http://www.w3.org/ns/ws-policy">
+	<wsme:Rule>
+		<wsme:Action IfCondition="true">
+			<wsme:ExecuteXSL>
+				<wsme:Parameter Name="Enforce" Value="true"/>
+				<wsme:Parameter Name="TransientDataMap" Value="TD_ConfigFile_FHIR_MPG_TransientDataMap_Logging"/>
+				<wsme:Stylesheet>local:///Framework/ProcessingFlow/FHIRLogTransiantData.xsl</wsme:Stylesheet>
+			</wsme:ExecuteXSL>
+		</wsme:Action>
+	</wsme:Rule>
+</wsp:Policy>
